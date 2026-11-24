@@ -1,0 +1,93 @@
+updated: '2026-11-24'
+note: GitHubの数字は 2026-11-21 時点。状態は公開情報から読めることだけ
+products:
+- name: みらい議会
+  url: https://gikai.team-mir.ai
+  what: 国会の法案を難易度を切り替えて解説。AIチャット、法案ごとのAIインタビュー、チームみらいの賛否と根拠、党内会議の動画
+  repo: team-mirai/mirai-gikai
+  status: 稼働中
+  source:
+    name: GitHub team-mirai/mirai-gikai
+    url: https://github.com/team-mirai/mirai-gikai
+    checked: '2026-11-21'
+- name: AIインタビュー
+  url: https://interview.team-mir.ai
+  what: AIが聞き手になる匿名のインタビュー。法案・政策テーマごとに声を集める
+  repo: null
+  status: 稼働中（2026年10月は25件実施、3,902件以上の声）
+  source:
+    name: チームみらい 月次まとめ 2026年10月
+    url: https://team-mir.ai/monthly/2026-10/recap.html
+    checked: '2026-11-21'
+- name: みらい まる見え政治資金
+  url: https://marumie.team-mir.ai/o/team-mirai
+  what: 政治資金の出入りを図で公開。2026年秋から議員の調研費を領収書つきで公開
+  repo: team-mirai/marumie
+  status: 稼働中
+  source:
+    name: GitHub team-mirai/marumie
+    url: https://github.com/team-mirai/marumie
+    checked: '2026-11-21'
+- name: 政府予算ビュー
+  url: https://rs-vis.team-mir.ai
+  what: 行政事業レビューなどをもとに、国の予算を可視化
+  repo: team-mirai-volunteer/rs-vis
+  status: β版（2026-10-31公開）
+  source:
+    name: GitHub team-mirai-volunteer/rs-vis
+    url: https://github.com/team-mirai-volunteer/rs-vis
+    checked: '2026-11-21'
+- name: 公開OKR
+  url: https://okr.team-mir.ai
+  what: 党全体・本部・議員室の目標と進み具合を公開
+  repo: team-mirai/okr-content
+  status: 稼働中（2026-10-22 一般公開）
+  source:
+    name: GitHub team-mirai/okr-content
+    url: https://github.com/team-mirai/okr-content
+    checked: '2026-11-21'
+- name: アクションボード
+  url: https://action.team-mir.ai
+  what: サポーターのミッションとポイント
+  repo: team-mirai-volunteer/action-board
+  status: 稼働中
+  source:
+    name: GitHub team-mirai-volunteer/action-board
+    url: https://github.com/team-mirai-volunteer/action-board
+    checked: '2026-11-21'
+- name: みんなのRCV
+  url: https://github.com/team-mirai/minna-no-rcv-oss
+  what: 順位付け投票（RCV）を実施するツール
+  repo: team-mirai/minna-no-rcv-oss
+  status: 不明
+  source:
+    name: GitHub team-mirai/minna-no-rcv-oss
+    url: https://github.com/team-mirai/minna-no-rcv-oss
+    checked: '2026-11-21'
+- name: 政策（マニフェスト）
+  url: https://policy.team-mir.ai
+  what: 政策の公開と、修正提案の受け付け。2026年衆院選版の本文はGitHubで管理
+  repo: team-mirai/manifesto-body
+  status: 不明
+  source:
+    name: GitHub team-mirai/manifesto-body
+    url: https://github.com/team-mirai/manifesto-body
+    checked: '2026-11-21'
+- name: 広聴AI
+  url: https://github.com/digitaldemocracy2030/kouchou-ai
+  what: 大量の意見をまとめて要約する（デジタル民主主義2030のプロジェクト）
+  repo: digitaldemocracy2030/kouchou-ai
+  status: 本家は更新が続いている
+  source:
+    name: GitHub digitaldemocracy2030/kouchou-ai
+    url: https://github.com/digitaldemocracy2030/kouchou-ai
+    checked: '2026-11-21'
+- name: いどばたシステム
+  url: https://github.com/digitaldemocracy2030/idobata
+  what: 熟議の支援（意見の収集・論点の抽出、施策案の改善提案）
+  repo: digitaldemocracy2030/idobata
+  status: 不明
+  source:
+    name: GitHub digitaldemocracy2030/idobata
+    url: https://github.com/digitaldemocracy2030/idobata
+    checked: '2026-11-21'

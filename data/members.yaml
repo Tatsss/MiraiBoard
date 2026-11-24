@@ -1,0 +1,447 @@
+updated: '2026-11-24'
+note: 公式サイトの国会議員団を正本とする。役割・肩書は公式サイトとOKRに書かれているものだけ。分からないことは「不明」
+members:
+- id: anno
+  name: 安野貴博
+  kana: あんのたかひろ
+  house: 参議院議員
+  district: 比例区
+  party_roles:
+  - チームみらい党首
+  catchphrase: 未来は明るいと信じられる国をつくる
+  statement: AIエンジニアとして、起業家として、SF作家として、テクノロジーを通じて未来を考えることに取り組んできました。右でも左でもなく未来軸で、政治をアップデートしてまいります。
+  profile: チームみらい党首・参議院議員・AIエンジニア・SF作家。開成高校を卒業後、東京大学へ進学、工学部松尾研究室出身。外資系コンサルティング会社のボストン・コンサルティング・グループを経て、AIチャットボットの株式会社BEDORE（現PKSHA Communication）、リーガルテックのMNTSQ株式会社を創業し、テクノロジーを通じた社会システム変革に携わる。2024年に東京都知事選に出馬し15万票獲得。2025年5月に「チームみらい」を結党し、参議院選挙（比例代表）で初当選。
+  channels:
+  - kind: X
+    url: https://x.com/takahiroanno
+  - kind: Instagram
+    url: https://www.instagram.com/takahiro.anno.sns/
+  - kind: TikTok
+    url: https://www.tiktok.com/@annotakahiro2024
+  - kind: YouTube
+    url: https://www.youtube.com/@%E5%AE%89%E9%87%8E%E8%B2%B4%E5%8D%9A
+  recent:
+  - date: 不明
+    title: 【チみラジ】#04「誰が偉くて誰が軍師的な人ですか？」ゲスト：砂流恵介氏【安野貴博×石井玄｜ポッドキャスト】
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=wGVx9BusWyc
+  - date: '2026-11-10'
+    title: 【全文】参議院 総務委員会 質疑／党首・安野貴博（2026年11月10日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n8219fbf933ff
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/sangiin/takahiro-anno
+    checked: '2026-11-24'
+- id: usami
+  name: 宇佐美登
+  kana: うさみのぼる
+  house: 衆議院議員
+  district: 比例東京(東京26区)
+  party_roles:
+  - （公式サイト・OKRに党の役職の記載なし）
+  catchphrase: 雨が降ったら傘を差しだすような、優しく新しい社会を最新テクノロジーで作る
+  statement: 'スマホやインターネットがあっという間に生活に欠かせないものになったように、人工知能(AI)は、私たちの生活すべてを革命的に変えていきます。
+
+    この大きな変化をチャンスととらえ、100年先の日本を見据えた「国家百年の大計」を描きながら、政治・行政をわかりやすく、使いやすく、生活に寄り添うものへと変えていきます。'
+  profile: '衆議院議員 3期（東京26区：目黒区・大田区の一部）。早稲田大学理工学部卒。1967年、東京都大田区生まれ。福島県出身の父と長野県出身の母が営む町工場の三男として育つ。石川台ひかり幼稚園・大田区立雪谷小・中学校、早稲田高等学院を経て、早稲田大学理工学部（医療工学）卒業。松下政経塾（10期生）修了後、1993年に26歳で衆議院議員最年少当選。携帯電話の自由化やPL法（製造物責任法）の実現に尽力。2003年に2期目当選。東日本大震災では津波で親戚を多数失い、福島・いわきの復興支援に奔走。2026年に3期目当選。
+
+    趣味はバドミントン、ウォーキング、ラグビーなどのスポーツ観戦。特技はけん玉。家族は妻と4人の子ども、そしてダックスフンド。'
+  channels:
+  - kind: X
+    url: https://x.com/usami_mirai
+  - kind: Instagram
+    url: https://www.instagram.com/usami_teammirai/
+  recent:
+  - date: '2026-11-13'
+    title: 'AIサイバー対策提言のその後｜どうなってるの？デジタル民主主義｜週刊チームみらいNEWS (2026年11月13日) #高山聡史 #宇佐美登'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=qJgyB2e040s
+  - date: '2026-10-27'
+    title: 【全文】衆議院 安全保障委員会 質疑／宇佐美登（2026年10月27日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/nd5fcb32ebd7d
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/noboru-usami
+    checked: '2026-11-24'
+- id: kawai
+  name: 河合道雄
+  kana: かわいみちお
+  house: 衆議院議員
+  district: 比例南関東
+  party_roles:
+  - チームみらい政務調査会長
+  catchphrase: ひとりひとりが未来を信じられる社会へ
+  statement: 一人ひとりが自分らしく生きることができる社会になるよう、仕組みから変えていきたいと考え、国政に挑戦をさせていただいております。このような機会をいただけているのは前回の選挙よりチームみらいを応援してくださっているみなさまのおかげです。未来が明るいと思えるように、精一杯尽力してまいります。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1990年生まれ、東京都出身。東京大学文学部を卒業後、京都大学大学院教育学研究科を修了し、教育系企業に勤務。共著に『フォルケホイスコーレのすすめ：デンマークの「大人の学校」に学ぶ』。
+  channels:
+  - kind: X
+    url: https://x.com/michio_mirai
+  - kind: Instagram
+    url: https://www.instagram.com/michio.kawai.mirai
+  - kind: TikTok
+    url: https://www.tiktok.com/@michio.kawai.mirai
+  - kind: YouTube
+    url: https://www.youtube.com/channel/UCqwsRNMWNh6zx3QYuqVJvSw
+  - kind: Threads
+    url: https://www.threads.com/@michio.kawai.mirai
+  recent:
+  - date: '2026-10-09'
+    title: '臨時国会開会！重要法案って何？｜個人情報漏洩、どうなってる？｜週刊チームみらいNEWS (2026年10月9日) #峰島侑也 #河合道雄'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=iloIghL-2yw
+  - date: '2026-11-11'
+    title: 【全文】衆議院 文部科学委員会 質疑／政調会長・河合道雄（2026年11月11日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n79891dd375ba
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/michio-kawai
+    checked: '2026-11-24'
+- id: hayashi
+  name: 林拓海
+  kana: はやしたくみ
+  house: 衆議院議員
+  district: 比例東北
+  party_roles:
+  - （公式サイト・OKRに党の役職の記載なし）
+  catchphrase: 見えない声を、かたちに。
+  statement: 通信制高校の職員として過ごした4年間、不登校や経済的な困難など、多様な背景を持つ生徒や保護者の皆様と歩んでまいりました。そこで向き合ったのは、今の支援制度だけでは支えきれない、社会の複雑な課題や「届かない声」の数々です。制度と現実のあいだで立ち止まってしまう人を、少しでも減らしたい。通信制高校で培った「一人ひとりに寄り添う力」を、今度は政治の場で。制度の隙間を埋め、誰もがチャレンジできる社会を実現するために、全力で取り組んでまいります。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1997年生まれ、北海道出身。北海道教育大学札幌校を卒業後、通信制高校で生徒保護者からの進路相談対応、生活サポートに従事、東北全域を担当した。
+  channels:
+  - kind: X
+    url: https://x.com/TakumiHayashi
+  - kind: Instagram
+    url: https://www.instagram.com/takumihayashi.teammirai
+  - kind: TikTok
+    url: https://www.tiktok.com/@hayashi_teammirai
+  recent:
+  - date: 不明
+    title: 【本人解説】高市総理に問う！年4兆円超の消費減税で価格は本当に下がる？農家・飲食店への影響、成功の指標は？10/20衆議院本会議を実況【林拓海】#チームみらい
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=RpnWLP9jcPk
+  - date: '2026-11-11'
+    title: 【全文】衆議院 厚生労働委員会 質疑／林拓海（2026年11月11日｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n0c08a002699e
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/takumi-hayashi
+    checked: '2026-11-24'
+- id: suda
+  name: 須田英太郎
+  kana: すだえいたろう
+  house: 衆議院議員
+  district: 比例東海
+  party_roles:
+  - チームみらい組織活動本部長
+  catchphrase: 未来への投資で、くらしとまちを明るくする
+  statement: 人口減少が進み、当たり前だった暮らしが失われつつあるこの国で、テクノロジーは、人を置き去りにするものではなく、暮らしや文化を支え、育てるために使われるべきだと私は考えています。私はこれまで、まちづくりスタートアップの経営を通じて、都市や地域の現場で、人と文化、テクノロジーが交わる場所に向き合ってきました。守るべきものを守り続けるために必要なのは、未来への投資です。次世代により良い社会を残すため、誠心誠意取り組んでまいります。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1990年生まれ、神奈川県出身。東京大学教養学部を卒業後、東京大学大学院総合文化研究科にて科学技術の実用化について文化人類学の視点で研究。在学中にまちづくりのITスタートアップを立ち上げ、香川県小豆島で自動運転バスを走らせるなど、地域や都市の課題をデジタルで解決する取り組みに従事。共著に『モビリティと人の未来―自動運転は人を幸せにするか』、『瀬戸内デザイン会議』シリーズなど。
+  channels:
+  - kind: X
+    url: https://x.com/Btaros
+  - kind: Instagram
+    url: https://www.instagram.com/eitaro.suda/
+  - kind: TikTok
+    url: https://www.tiktok.com/@eitaro.suda
+  - kind: YouTube
+    url: https://www.youtube.com/@eitaro_suda
+  - kind: Threads
+    url: https://www.threads.com/@eitaro.suda
+  - kind: note
+    url: https://note.com/btaros
+  - kind: Podcast
+    url: https://open.spotify.com/show/3wIBAeqUxluJLeCK4v6cGW
+  - kind: Webサイト
+    url: https://eitarosuda.com/
+  recent:
+  - date: '2026-11-06'
+    title: '消費税・支援金法案に反対｜新チャンネル「1億人の事情」って？｜週刊チームみらいNEWS (2026年11月6日) #峰島侑也 #須田英太郎'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=Y7tXV1veA90
+  - date: '2026-10-28'
+    title: 【全文】衆議院 国土交通委員会 質疑／組織活動本部長・須田英太郎（2026年10月28｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n63e5f2f8ac03
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/eitaro-suda
+    checked: '2026-11-24'
+- id: muto
+  name: 武藤かず子
+  kana: むとうかずこ
+  house: 衆議院議員
+  district: 比例北関東
+  party_roles:
+  - 国対委員長代理
+  catchphrase: あなたの声が、政治を動かす。
+  statement: 「すべての子どもが、安心して学べる社会」の実現を目指し、現場で聞いてきた声とこれまでの経験をもとに、課題を制度や支援の形につなげていきたいと考えています。声が埋もれない政治を実現するため、政治活動に取り組んでいきます。
+  profile: 衆議院議員。2026年衆議院議員選挙にて北関東選出にて当選。1981年生まれ、茨城県坂東市出身。つくば秀英高校、亜細亜大学国際関係学部卒業後、IT分野で18年間にわたりキャリアを積み、プロジェクトマネージャーとして業務改革や組織運営を推進。退職後は療育支援やシングルマザー支援に取り組むNPO活動支援にも携わる。チームみらい立ち上げ以前より安野貴博事務所にて秘書として従事。
+  channels:
+  - kind: X
+    url: https://x.com/moo_mirai
+  - kind: Instagram
+    url: https://www.instagram.com/muto_mirai/#
+  - kind: TikTok
+    url: https://www.tiktok.com/@muto_mirai
+  - kind: YouTube
+    url: https://www.youtube.com/@KazukoMuto
+  - kind: Threads
+    url: https://www.threads.com/@muto_mirai
+  recent:
+  - date: '2026-09-11'
+    title: '高市総理へのAI政策提言ペーパーを公開｜SNSで話題？チームみらいの求人｜週刊チームみらいNEWS (2026年9月11日) #武藤かず子 #河合道雄'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=GvBC3A_adwg
+  - date: '2026-11-06'
+    title: 【全文】衆議院 地域活性化・こども政策・デジタル社会形成に関する特別委員会 質疑／国会対策委員長代理・武藤かず子（2026年11月6日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/ne661d5423d01
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/kazuko-muto
+    checked: '2026-11-24'
+- id: kobayashi
+  name: 小林修平
+  kana: こばやししゅうへい
+  house: 衆議院議員
+  district: 比例南関東(千葉5区)
+  party_roles:
+  - （公式サイト・OKRに党の役職の記載なし）
+  catchphrase: 未来への投資を最優先に。やさしい社会をつくる。
+  statement: 正直者が馬鹿を見る。真面目に働く人が損をする。不合理で複雑なルールが、必要な支援を遠ざける。 私はこれらを社会のバグだと考えています。ソフトウェアエンジニアとして働いてきた経験から、バグは直せるものだと理解しています。 国会では数少ないエンジニア議員として、新しい視点を国政に届け、テクノロジーで政治を変え、未来は明るいと信じられる国を目指します。　　未来のために、今できることをやる。まだ選挙権を持たない次の世代のために、目先の利益より未来の可能性を選ぶ。誰もが将来に希望を持てる「やさしい社会」を、みなさんと一緒につくってまいります。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1990年生まれ、千葉県松戸市出身。2012年株式会社ドワンゴ入社。エンジニア組織にて動画配信サービスの開発に従事。後に株式会社ディー・エヌ・エー、株式会社ABEJA、株式会社デライト・ベンチャーズを経て、チームみらい開発本部(永田町エンジニアチーム)。
+  channels:
+  - kind: X
+    url: https://x.com/syuhei_mirai
+  - kind: Instagram
+    url: https://www.instagram.com/syuhei_mirai/
+  - kind: TikTok
+    url: https://www.tiktok.com/@syuhei_mirai
+  - kind: YouTube
+    url: https://www.youtube.com/@syuhei_mirai
+  - kind: Webサイト
+    url: https://syuheikobayashi.com
+  recent:
+  - date: '2026-10-23'
+    title: 'サイバーセキュリティ提言｜「まる見え」宣言って何？｜週刊チームみらいNEWS (2026年10月23日) #峰島侑也 #小林修平'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=v2rqFFS525g
+  - date: '2026-11-06'
+    title: 【全文】衆議院 経済産業委員会 質疑／小林修平（2026年11月6日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/ne6109e5aa877
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/syuhei-kobayashi
+    checked: '2026-11-24'
+- id: dobashi
+  name: 土橋章宏
+  kana: どばしあきひろ
+  house: 衆議院議員
+  district: 比例東京(東京2区)
+  party_roles:
+  - （公式サイト・OKRに党の役職の記載なし）
+  catchphrase: エンタメコンテンツとAIで日本をもう一度稼げる国へ
+  statement: 「未来」に向けた成長投資により国産プラットフォームを築き、日本のコンテンツを世界へ展開！　強い外貨獲得産業として育てます。ＡＩによる効果的な翻訳で言語障壁を突破し、エンタメコンテンツと文化を世界中に広げ、利益をクリエイターに還元し、世界中を笑顔に！　未来が明るいと思える国を作って参ります。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1969年生まれ、大阪出身。 豊中高校、関西大学工学部卒業。日立製作所で研究開発に従事したのち、Web制作会社を起業。 映画『超高速！参勤交代』『身代わり忠臣蔵』などの脚本を手がけ、 テレビドラマ・小説・漫画原作など幅広いコンテンツ制作に携わる。二人の子育てと介護に奮闘中。
+  channels:
+  - kind: X
+    url: https://x.com/a_dobashi
+  - kind: Instagram
+    url: https://www.instagram.com/dobashi_akihiro/
+  - kind: TikTok
+    url: https://www.tiktok.com/@dobassie1
+  - kind: YouTube
+    url: https://www.youtube.com/channel/UCxnB10C-rIra6KUPGLdJySg
+  - kind: Threads
+    url: https://www.threads.com/@akihiro_dobashi
+  - kind: note
+    url: https://note.com/dobassie
+  - kind: Webサイト
+    url: https://akihirodobashi-ops.github.io/dobashi-homepage/
+  recent:
+  - date: '2026-10-30'
+    title: 'AI失業対策提言｜どうなる？消費減税｜後半は国対NEWS！｜週刊チームみらいNEWS (2026年10月30日) #峰島侑也 #土橋章宏'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=e0iJhOiH5-Y
+  - date: '2026-11-10'
+    title: 【全文】衆議院 本会議 質疑／土橋章宏（2026年11月10日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n265e0cd42952
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/akihiro-dobashi
+    checked: '2026-11-24'
+- id: yamada
+  name: 山田瑛理
+  kana: やまだえり
+  house: 衆議院議員
+  district: 比例南関東
+  party_roles:
+  - （公式サイト・OKRに党の役職の記載なし）
+  catchphrase: 今に、応える。誰もが夢や希望を語れる日本に。
+  statement: 民間企業で働く中で、政治をどこか遠い存在だと感じていました。転機となったのは、2015年に川崎で起きた子ども同士の凄惨な事件です。守られるべき命が社会のすき間で失われた現実に、「市民の、街の声を政策に届けたい」と政治の世界に飛び込みました。子どもたちが挑戦をあきらめなくていい日本、そして大人も何度でも挑戦し続けられる日本へ。政治を身近に、希望を語れるものにするため、今に応える政治を。私自身も挑戦を続けていきます。
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1982年生まれ、川崎市出身。東京女学館高等学校、上智大学経済学部卒業。ソニー・ミュージックエンタテインメントに入社し、音楽・エンタメコンテンツ事業や教育事業に従事。退職後、地域活動に参加。2019年、川崎市議会議員に初当選し、2期6年務める。2025年川崎市長選挙に立候補。二児の母。
+  channels:
+  - kind: X
+    url: https://x.com/yamadaeri1982
+  - kind: Instagram
+    url: https://www.instagram.com/yamadaeri_kawasaki/
+  - kind: TikTok
+    url: https://www.tiktok.com/@yamadaeri_kawasaki
+  - kind: YouTube
+    url: https://youtube.com/channel/UC9c3G8HoL-tt9rf5BTzmf4g
+  - kind: Threads
+    url: https://www.threads.com/@yamadaeri_kawasaki
+  - kind: Webサイト
+    url: https://youtu.be/LNP2OzRniwE?si=diQZdJkFWQSyxyl_
+  recent:
+  - date: '2026-10-29'
+    title: 【全文】衆議院 総務委員会 質疑／山田瑛理（2026年10月29日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n26bc6bb6af7f
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/eri-yamada
+    checked: '2026-11-24'
+- id: takayama
+  name: 高山聡史
+  kana: たかやまさとし
+  house: 衆議院議員
+  district: 比例東京
+  party_roles:
+  - チームみらい共同創設者
+  - 国会対策委員長
+  catchphrase: 未来のために、今できることに全力。
+  statement: 'チームみらいは、こどもたちが安心・安全に暮らせる未来のために全力で投資します。
+
+    テクノロジーを活用して、成長実感を持てる社会、子育てしやすい社会を実現します。'
+  profile: 衆議院議員。2026年衆議院議員選挙にて当選。1986年生まれ、京都府出身。灘中学校・高等学校を卒業後、慶應義塾大学経済学部、同大学院経済学研究科修了。外資系コンサルティング会社のボストン・コンサルティング・グループを経て、複数のAIスタートアップ企業で事業開発に従事。2025年、安野貴博とともにチームみらいを立ち上げた。
+  channels:
+  - kind: X
+    url: https://x.com/satoshi_2125/
+  - kind: Instagram
+    url: https://www.instagram.com/satoshi.takayama.12/
+  - kind: TikTok
+    url: https://www.tiktok.com/@satoshi2215
+  - kind: YouTube
+    url: https://www.youtube.com/@satoshi_takayama
+  - kind: Threads
+    url: https://www.threads.com/@satoshi.takayama.12
+  recent:
+  - date: '2026-11-13'
+    title: 'AIサイバー対策提言のその後｜どうなってるの？デジタル民主主義｜週刊チームみらいNEWS (2026年11月13日) #高山聡史 #宇佐美登'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=qJgyB2e040s
+  - date: '2026-11-10'
+    title: 【全文】衆議院 本会議 討論／国会対策委員長・高山聡史（2026年11月10日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n55a5e6391e74
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/satoshi-takayama
+    checked: '2026-11-24'
+- id: mineshima
+  name: 峰島侑也
+  kana: みねしまゆうや
+  house: 衆議院議員
+  district: 比例東京(東京7区)
+  party_roles:
+  - チームみらい広報本部長
+  catchphrase: 次の世代が安心して暮らせる未来をつくる
+  statement: 目先の政局ではなくしっかりと未来を見据え、次の世代に安心して残せる社会に向けて前進しつづけることが大切です。日本には経済の停滞、人口減少といった社会全体の課題もあれば政治不信の問題もあります。これらの課題についてチームみらいは手を動かしひとつひとつ解決していきます。
+  profile: 衆議院議員。2026年衆議院議員選挙にて東京7区（港区・渋谷区）で落選するも、比例東京ブロックより復活当選。1990年生まれ、東京都出身。開成高校、東京大学法学部を卒業後、ロンドン・ビジネス・スクールにてMBAを取得。米系金融機関であるゴールドマン・サックスを経て、スタートアップの取締役CFOを務める。その後、IT上場企業であるマネーフォワードにおいて執行役員及びグループ会社取締役を務め、国内企業のバックオフィスDXを支援。2025年、チームみらいの結党直後に参加。一児の父。
+  channels:
+  - kind: X
+    url: https://x.com/mineshima_mirai
+  - kind: Instagram
+    url: https://www.instagram.com/yuyamineshima_teammirai/
+  - kind: TikTok
+    url: https://www.tiktok.com/@yuyamineshima_teammirai
+  - kind: YouTube
+    url: https://www.youtube.com/channel/UCHefyUa7pnlEtryEjvXb9gw
+  - kind: Threads
+    url: https://www.threads.com/@yuyamineshima_teammirai
+  - kind: note
+    url: https://note.com/ymineshima_mirai
+  - kind: Podcast
+    url: https://open.spotify.com/show/5Sl8ryytEDzAESCcIr4ipi
+  - kind: Webサイト
+    url: https://yuyamineshima.com/
+  recent:
+  - date: '2026-11-06'
+    title: '【チームみらい】定例会見 (2026年11月6日）開始予定15:00〜  #峰島侑也'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=EKOPcZYQ4kg
+  - date: '2026-11-06'
+    title: 【全文】衆議院 本会議 討論／広報本部長・峰島侑也（2026年11月6日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/ncfdb88fbcc51
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/yuya-mineshima
+    checked: '2026-11-24'
+- id: furukawa
+  name: 古川あおい
+  kana: ふるかわあおい
+  house: 衆議院議員
+  district: 比例九州
+  party_roles:
+  - チームみらい幹事長
+  - 議員本部長
+  catchphrase: 「届く」政治へ
+  statement: 私は、行政と国民の間にある距離を縮めることが、政治の最重要課題の一つだと考えています。国民の声が行政に届かず、行政の支援や情報が国民に届かない。このギャップを埋め、必要な情報と支援が確実に届く仕組みをつくることが、暮らしの安心につながります。みんなの声を政策に変え、確実に届ける。その政治を実現するために、私は挑戦します。
+  profile: 衆議院議員。チームみらい幹事長。2026年衆議院議員選挙にて当選。1991年生まれ、佐賀県出身。久留米大学附設高校、東京大学法学部、同公共政策大学院卒業。厚生労働省で介護保険制度改正や新型コロナ対応、医療系ベンチャー支援などに携わった後、UCバークレー情報大学院にてデータサイエンスを専攻し、情報マネジメント学修士号を取得。米国金融機関、シリコンバレーのスタートアップ企業でエンジニアとしての勤務を経て、2025年参議院選挙では福岡県選挙区にて立候補。その後はチームみらい党首安野貴博の秘書として国会活動・政策立案を支援した。
+  channels:
+  - kind: X
+    url: https://x.com/AoiFurukawa
+  - kind: Instagram
+    url: https://www.instagram.com/aoi.furukawa/#
+  - kind: TikTok
+    url: https://www.tiktok.com/@furukawa.aoi
+  - kind: YouTube
+    url: https://www.youtube.com/@FurukawaAoi
+  - kind: Threads
+    url: https://www.threads.com/@aoi.furukawa
+  - kind: note
+    url: https://note.com/aoifurukawa
+  recent:
+  - date: '2026-11-13'
+    title: '【チームみらい】定例会見 (2026年11月13日）開始予定10:00〜  #古川あおい'
+    kind: YouTube
+    url: https://www.youtube.com/watch?v=mxZ_OTmVZ6M
+  - date: '2026-11-12'
+    title: 【全文】衆議院 憲法審査会 発言／幹事長・古川あおい（2026年11月12日）｜チームみらい 国会記録【公式】
+    kind: note
+    url: https://note.com/team_mirai_log/n/n95e85f5429b2
+  unknown:
+  - 所属委員会（v1では未記載）
+  sources:
+  - name: チームみらい公式サイト 国会議員プロフィール
+    url: https://team-mir.ai/member/shugiin/aoi-furukawa
+    checked: '2026-11-24'

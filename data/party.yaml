@@ -1,0 +1,76 @@
+updated: '2026-11-24'
+name: チームみらい
+summary: 2024年都知事選で安野たかひろのもとに集まった「チーム安野」を前身とする、テクノロジーで政治と未来を良くすることを目指す新党。
+summary_source: &id001
+  name: チームみらい公式サイト 私たちについて
+  url: https://team-mir.ai/about
+  checked: '2026-11-24'
+leader: 安野貴博（党首・参議院議員）
+mission:
+- テクノロジーで政治をかえる。
+- あなたと一緒に未来をつくる。
+vision:
+- title: 政治にテクノロジーを
+  point: テクノロジーで透明化・効率化・スマート化
+- title: 日本に明るい未来を
+  point: 新しい産業と文化が生まれ、未来は明るいと信じられる国へ
+- title: 変化に対応できる社会を
+  point: 激動する世界の変化に耐えられる柔軟なシステムをつくる
+values:
+- title: 手を動かす
+  point: 現場視点で建設的なプランを考え、自らの手で素早く実行する
+- title: オープンにする
+  point: 意思決定も、お金の流れも、プロセスも透明に
+- title: 誰かをおとしめない
+  point: 他の政党も政治家も、日本の未来をつくる仲間
+- title: 分断を煽らない
+  point: 感情ではなく、データと事実で語る
+- title: 何事も決めつけない
+  point: 多様な声に耳を傾け、より良い答えがあれば柔軟に改善する
+mvv_source: *id001
+numbers:
+  as_of: '2026-11-24'
+  source:
+    name: チームみらい公式サイト トップ（数字で見るチームみらい）
+    url: https://team-mir.ai/
+    checked: '2026-11-24'
+  items:
+  - label: 2026年衆院選・比例代表での得票数
+    value: 3,813,750票
+  - label: 2026年衆院選で獲得した議席数
+    value: 11議席
+  - label: 国会議員
+    value: 12人（参議院1・衆議院11）
+  - label: サポーター数
+    value: 34,485人
+  - label: 党員数
+    value: 2,132人（プレミアム160・レギュラー371・スターター1,601）
+  - label: 国政政党になってからの日数
+    value: 493日
+  - label: 企業・団体献金
+    value: 0円
+cycle:
+  summary: 党の仕事を「聴く → 磨く → 動かす → 伝える」の4つ（デジタル民主主義サイクル）に整理し、それぞれに執行役員を置いた（2026年9月の新体制）。
+  source:
+    name: チームみらいTIMES 10月号
+    url: https://team-mir.ai/times/vol01.html
+    checked: '2026-11-21'
+  roles:
+  - step: 聴く
+    officer: 村井謙太
+    scope: 開発本部・広聴本部
+  - step: 磨く
+    officer: 河合道雄
+    scope: 政務調査会
+  - step: 動かす
+    officer: 古川あおい
+    scope: 議員本部・国会対策委員会
+  - step: 伝える
+    officer: 峰島侑也
+    scope: 広報本部・事務本部・組織活動本部
+member_role_policy:
+  summary: 党が議員に必ず求めるのは、所属する本部のOKRに向けた活動、国会での質疑・政策議論、党が求める情報の公開（調研費、海外視察の報告など）、依頼された党務。地元の行事への出席など特定の地域に根ざした活動は、党として求めていない。
+  source:
+    name: チームみらい OKR（議員に期待する役割）
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/_meta.yml
+    checked: '2026-11-24'

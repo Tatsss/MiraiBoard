@@ -1,0 +1,75 @@
+updated: '2026-11-24'
+channels:
+- kind: YouTube
+  name: チームみらい 公式チャンネル
+  url: https://www.youtube.com/@team_mirai_jp
+  source: &id001
+    name: チームみらい公式サイト トップ（数字で見るチームみらい）
+    url: https://team-mir.ai/
+    checked: '2026-11-24'
+- kind: YouTube
+  name: まる見えチャンネル
+  url: https://www.youtube.com/channel/UCLXFqEqcnMcl9RnvANuShSg
+  what: 法案の賛否を決める党内会議を公開（2026年10月開始）
+  source: &id002
+    name: チームみらい公式サイト お知らせ一覧
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-21'
+- kind: note
+  name: チームみらい 公式note
+  url: https://note.com/team_mirai_jp
+  source: *id001
+- kind: note
+  name: チームみらい 国会記録【公式】
+  url: https://note.com/team_mirai_log
+  what: 議員の国会質疑の全文
+  source:
+    name: 各議員の公式プロフィールの「最近の活動」
+    url: https://team-mir.ai/about
+    checked: '2026-11-24'
+- kind: X
+  name: チームみらい 公式X
+  url: https://x.com/team_mirai_jp
+  source: *id001
+- kind: Instagram
+  name: チームみらい 公式Instagram
+  url: https://www.instagram.com/team_mirai_jp/
+  source: *id001
+- kind: TikTok
+  name: チームみらい 公式TikTok
+  url: https://www.tiktok.com/@team_mirai_jp
+  source: *id001
+- kind: Threads
+  name: チームみらい 公式Threads
+  url: https://www.threads.com/@team_mirai_jp
+  source: *id001
+- kind: Facebook
+  name: チームみらい 公式Facebook
+  url: https://www.facebook.com/teammirai.official
+  source: *id001
+- kind: Podcast
+  name: ポッドキャスト（Spotify）
+  url: https://open.spotify.com/show/3wIBAeqUxluJLeCK4v6cGW
+  source: *id001
+- kind: Podcast
+  name: ポッドキャスト（Spotify）
+  url: https://open.spotify.com/show/5Sl8ryytEDzAESCcIr4ipi
+  source: *id001
+- kind: ニュースレター
+  name: チームみらいTIMES（月刊）
+  url: https://team-mir.ai/times/vol01.html
+  what: 党員・寄付者向け。2026-11-06開始
+  source: *id002
+- kind: GitHub
+  name: team-mirai
+  url: https://github.com/team-mirai
+  what: 党のプロダクトのリポジトリ
+  source:
+    name: チームみらい OKR（公開データ）
+    url: https://github.com/team-mirai/okr-content
+    checked: '2026-11-24'
+- kind: GitHub
+  name: team-mirai-volunteer
+  url: https://github.com/team-mirai-volunteer
+  what: ボランティアのエンジニアのリポジトリ
+  source: null

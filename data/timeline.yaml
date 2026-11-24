@@ -1,0 +1,94 @@
+updated: '2026-11-24'
+note: 日付と出来事は出典に書かれている範囲だけ。出典が見つからないものは「出典未確認」と書く
+events:
+- date: '2024'
+  event: 東京都知事選挙で安野たかひろのもとに「チーム安野」が集まる（チームみらいの前身）
+  source:
+    name: チームみらい公式サイト 私たちについて
+    url: https://team-mir.ai/about
+    checked: '2026-11-24'
+- date: 2025-05
+  event: チームみらい結党（日付は出典未確認）
+  source: null
+  note: 公式の一次情報で日付を確認できていない
+- date: 2025-07
+  event: 2025年参議院選挙。比例代表で1,517,890票。安野貴博が当選し、国政政党になる
+  source:
+    name: チームみらい公式サイト 2025年参議院選挙
+    url: https://team-mir.ai/election/sangiin-2025
+    checked: '2026-11-24'
+  note: 国政政党になった日付は、トップの「国政政党になってからの日数」（2026-11-24時点で493日）から逆算すると2025年7月下旬
+- date: '2026'
+  event: 2026年衆議院選挙。比例代表で3,813,750票、11議席（投開票日は出典未確認）
+  source:
+    name: チームみらい公式サイト トップ（数字で見るチームみらい）
+    url: https://team-mir.ai/
+    checked: '2026-11-24'
+- date: '2026-08-02'
+  event: 党職員・秘書の採用ページを開設
+  source: &id001
+    name: チームみらい公式サイト お知らせ一覧
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-21'
+- date: '2026-09-12'
+  event: YouTube「永田町エンジニアチーム密着」を公開
+  source: *id001
+- date: '2026-09-17'
+  event: 党首会見で新体制の人事を発表。広聴本部を新設
+  source: *id001
+- date: '2026-10-05'
+  event: 第222回臨時国会が召集
+  source: *id001
+- date: '2026-10-06'
+  event: YouTube「はじめまして！広聴本部です」
+  source: *id001
+- date: '2026-10-10'
+  event: 議員の調研費の「まる見え」を試験公開（峰島事務所）
+  source: &id002
+    name: チームみらい 月次まとめ 2026年10月
+    url: https://team-mir.ai/monthly/2026-10/recap.html
+    checked: '2026-11-21'
+- date: '2026-10-14'
+  event: みらい議会に臨時国会の法案解説（22法案）を掲載
+  source: *id001
+- date: '2026-10-22'
+  event: OKRを一般公開（10/16にサポーターへ先行公開）
+  source: *id002
+- date: '2026-10-22'
+  event: 「まる見え」宣言。法案の賛否を決める党内会議（YouTube「まる見えチャンネル」）、OKR、議員の調研費の使い道、海外視察の報告と費用を公開する
+  source: *id001
+- date: '2026-10-23'
+  event: AIサイバー対策緊急提言をデジタル大臣に手交（AIインタビューで漏洩の経験者等1,252件・専門家等290件の声）
+  source: &id003
+    name: チームみらいTIMES 10月号
+    url: https://team-mir.ai/times/vol01.html
+    checked: '2026-11-21'
+- date: '2026-10-26'
+  event: AI失業対策提言を官房長官に手交（AIインタビュー664件）
+  source: *id003
+- date: '2026-10-28'
+  event: 消費税減税法案の意見募集サイトを公開
+  source: *id001
+- date: '2026-10-31'
+  event: 政府予算ビュー（β版）を公開。メディアプロジェクト「1億人の事情」を開始
+  source: *id001
+- date: '2026-10-31'
+  event: 議員室ごとのOKRを公開
+  source: *id002
+- date: '2026-11-06'
+  event: 党員・寄付者向けの月刊ニュースレター「チームみらいTIMES」を開始
+  source: *id001
+- date: '2026-11-11'
+  event: グレン・ワイル氏と安野貴博の超党派勉強会レポート
+  source: *id001
+- date: '2026-11-13'
+  event: note「発足から2ヶ月　広聴本部に寄せられた『声』に答えます！」
+  source: *id001
+  note: note本文は未取得
+- date: '2026-11-20'
+  event: 議員の調研費の領収書をAIで仕訳する機能の正式版（まる見え政治資金）
+  source: null
+  note: 出典未確認（公式noteまたはGitHubで確認する）
+- date: '2026-11-22'
+  event: 全国キャラバン2026 ファイナル（熊本）
+  source: *id003
