@@ -1,0 +1,153 @@
+updated: '2026-11-24'
+intro: チームみらいは、政策づくりと党の運営を「聴く → 磨く → 動かす → 伝える」のサイクル（デジタル民主主義サイクル）で進めている。ここでは、それぞれの段階で、誰が・何を使って・どんな流れで動いていて、どこまで進み、どこが公開の場で課題として挙がっているかを並べる。
+intro_source:
+  name: チームみらい OKR（テーマ別の並び）
+  url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/issues.yml
+  checked: '2026-11-24'
+example_flow:
+  title: 法案ひとつを、サイクルで扱うときの流れ（党が想定しているもの）
+  steps:
+  - みらい議会に法案を公開する
+  - AIインタビューで声を聴く
+  - 声をもとに、賛否と国会での質問を作る
+  - みらい議会で、理由とともに公開する
+  source:
+    name: チームみらい OKR 政務調査会 O2（KR2-2 の補足）
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/seicho/o2.yml
+    checked: '2026-11-24'
+stages:
+- key: listen
+  tag: 聴く
+  title: できるだけ多くの人の声を集める
+  officer: 村井謙太
+  units:
+  - 広聴本部
+  - 開発本部
+  what: AIが聞き手になるインタビュー（AIインタビュー）で、テーマや法案ごとに匿名で声を集める。みらい議会の法案ページからも入れる。集めた声は分析し、示唆とともに政策をつくる側（政務調査会）や党内の担当に渡す。
+  tools:
+  - AIインタビュー
+  - みらい議会
+  facts:
+  - text: 2026年10月はAIインタビューを25件実施し、3,902件以上の声が集まった
+    source:
+      name: チームみらい 月次まとめ 2026年10月
+      url: https://team-mir.ai/monthly/2026-10/recap.html
+      checked: '2026-11-21'
+  - text: 声を集めて政務調査会に渡すまでに、入口（政策LPなど）、集め方、生かし方、記録の伝え方までを追いかける
+    source:
+      name: チームみらい OKR 広聴本部 O1（KR2 の補足）
+      url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kocho/o1.yml
+      checked: '2026-11-24'
+  public_issues:
+  - repo: team-mirai/mirai-gikai
+    number: 979
+    title: AIインタビューの実行条件と変更履歴を、後から検証できるようにしたい（設計相談）
+    date: '2026-09-09'
+    url: https://github.com/team-mirai/mirai-gikai/issues/979
+    checked: '2026-11-21'
+  - repo: team-mirai/mirai-gikai
+    number: 1055
+    title: みらい議会から入るAIインタビューで、回答済みでも複数回回答できる
+    date: '2026-10-25'
+    url: https://github.com/team-mirai/mirai-gikai/issues/1055
+    checked: '2026-11-21'
+  unknown:
+  - 集めた声を、どんな手順・どんな形で政務調査会に渡しているか（公開情報からは見えない）
+- key: refine
+  tag: 磨く
+  title: 集まった声をもとに政策を磨く
+  officer: 河合道雄
+  units:
+  - 政務調査会
+  - 広聴本部
+  what: 政務調査会が、国民や有識者との熟議をもとに、法案の賛否の判断や重要な政策づくりを行う。全法案の賛否と根拠をみらい議会で公開すること、判断の軸（目的関数）を決めて全法案で運用することを目標にしている。
+  tools:
+  - みらい議会
+  - 政策（マニフェスト）
+  facts:
+  - text: AI失業とAIサイバー対策の2テーマで、聴く→磨く→提言までを完走した
+    source:
+      name: チームみらい OKR 政務調査会 O2
+      url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/seicho/o2.yml
+      checked: '2026-11-24'
+  - text: AIサイバー対策緊急提言（2026-10-23）とAI失業対策提言（2026-10-26）を政府に手交
+    source:
+      name: チームみらいTIMES 10月号
+      url: https://team-mir.ai/times/vol01.html
+      checked: '2026-11-21'
+  public_issues: []
+  unknown:
+  - 政務調査会の内部での検討の進め方（会議の一部は「まる見えチャンネル」で公開されている）
+- key: act
+  tag: 動かす
+  title: 磨いた政策で、国会や社会を動かす
+  officer: 古川あおい
+  units:
+  - 国会対策委員会
+  - 議員本部
+  - 各議員室
+  what: 国会での質疑、法案の修正や附帯決議、政府への申し入れで、声を実際の制度に届ける。各議員室は「政府を動かした」事例を、党の共通基準（答弁・附帯決議・回答・政府文書。新規性・具体性・声とのつながり）でつくりにいく。
+  tools:
+  - AIインタビュー
+  - みらい議会
+  facts:
+  - text: 「政府を動かした」と数える条件の一つに、AIインタビューの要旨と、質疑・申し入れ文書の該当箇所を対応づけて記録していることがある
+    source:
+      name: チームみらい OKR 議員室の共通基準
+      url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/giinshitsu/_giinshitsu.yml
+      checked: '2026-11-24'
+  public_issues: []
+  unknown:
+  - 議員事務所の日々の実務（公開情報にはほとんど出てこない）
+- key: tell
+  tag: 伝える
+  title: 結果やプロセスを伝え、次の聴くにつなげる
+  officer: 峰島侑也
+  units:
+  - 広報本部
+  - 組織活動本部
+  - 事務本部
+  what: 議論の過程や決め方、お金の使い道まで公開し、サポーターと一緒に伝える。法案の賛否を決める党内会議の公開（まる見えチャンネル）、OKRの公開、議員の調研費の公開もここに当たる。
+  tools:
+  - みらい まる見え政治資金
+  - 公開OKR
+  - アクションボード
+  facts:
+  - text: 2026-10-22 に「まる見え」宣言（党内会議・OKR・調研費の使い道・海外視察の報告と費用を公開）
+    source:
+      name: チームみらい公式サイト お知らせ一覧
+      url: https://team-mir.ai/news/all
+      checked: '2026-11-21'
+  public_issues:
+  - repo: team-mirai/marumie
+    number: 1658
+    title: 支払先が決まらなかった書類を、AIエージェントに解決させたい
+    date: '2026-10-06'
+    url: https://github.com/team-mirai/marumie/issues/1658
+    checked: '2026-11-21'
+  - repo: team-mirai/marumie
+    number: 1903
+    title: 公開済みの仕訳が1件も紐づかない支出群を、公開ページに出さない
+    date: '2026-11-12'
+    url: https://github.com/team-mirai/marumie/issues/1903
+    checked: '2026-11-21'
+  unknown:
+  - 調研費の公開の運用（領収書の受け取りから公開まで）を、各議員室でどう回しているか
+- key: cycle
+  tag: サイクルを回す
+  title: 聴くから伝えるまでを一周させる
+  officer: null
+  units:
+  - 広聴本部
+  - 広報本部
+  what: 聴く・磨く・動かす・伝えるを一つの論点で最後まで回しきり、その結果を評価する。
+  tools: []
+  facts:
+  - text: 広聴・分析・党の議論と決定・国民への公表まで完了した論点（ループが閉じた論点）を5つつくることを目標にしている
+    source:
+      name: チームみらい OKR 広聴本部 O1（KR3）
+      url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kocho/o1.yml
+      checked: '2026-11-24'
+  public_issues: []
+  unknown:
+  - サイクルの評価指標（開発本部と策定する予定）

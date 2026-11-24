@@ -87,6 +87,23 @@ def main(src: str) -> None:
         })
     offices.sort(key=lambda o: o["order"])
 
+    # KR の索引（id → 要約・状態・進み・どの本部／議員室の目標か）
+    index = {}
+    for owner_type, owners in (("hq", hqs), ("office", offices)):
+        for owner in owners:
+            for o in owner["objectives"]:
+                for kr in o["krs"]:
+                    index[kr["id"]] = {**kr, "owner": owner["name"], "owner_type": owner_type, "owner_id": owner["id"], "objective": o["title"]}
+
+    # 党が公開している「テーマ別の並び」（聴く→磨く→動かす→伝える など）
+    themes = []
+    for t in load(quarter / "issues.yml").get("issues", []):
+        themes.append({
+            "key": t.get("key"),
+            "lead": t.get("lead"),
+            "groups": [{"key": g.get("key"), "tag": g.get("tag"), "title": g.get("title"), "krs": [k for k in g.get("krs", []) if k in index]} for g in t.get("groups", [])],
+        })
+
     common = load(quarter / "giinshitsu" / "_giinshitsu.yml").get("premise", {})
     out = {
         "period": meta.get("period"),
@@ -97,6 +114,8 @@ def main(src: str) -> None:
         "hq": hqs,
         "offices": offices,
         "office_criteria": {"title": common.get("title"), "body": common.get("body")},
+        "themes": themes,
+        "kr_index": index,
     }
     dest = ROOT / "data" / "okr" / f"{year.name}-{quarter.name}.json"
     dest.parent.mkdir(parents=True, exist_ok=True)

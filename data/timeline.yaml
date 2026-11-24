@@ -7,10 +7,12 @@ events:
     name: チームみらい公式サイト 私たちについて
     url: https://team-mir.ai/about
     checked: '2026-11-24'
-- date: 2025-05
-  event: チームみらい結党（日付は出典未確認）
-  source: null
-  note: 公式の一次情報で日付を確認できていない
+- date: 2025-04
+  event: チームみらい設立（求人ページの団体情報では「設立年月 2025年4月」）
+  source:
+    name: チームみらい 求人ページ（HERP）の団体情報
+    url: https://herp.careers/v1/teammirai/XTQyRrd66252
+    checked: '2026-11-21'
 - date: 2025-07
   event: 2025年参議院選挙。比例代表で1,517,890票。安野貴博が当選し、国政政党になる
   source:

@@ -4,6 +4,7 @@ members:
 - id: anno
   name: 安野貴博
   kana: あんのたかひろ
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/d0f17c3219f04635af4c592239758e91/anno_green.jpg
   house: 参議院議員
   district: 比例区
   party_roles:
@@ -38,6 +39,7 @@ members:
 - id: usami
   name: 宇佐美登
   kana: うさみのぼる
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/897b8b5979fe48a0828cdacd5f31ac63/usami-green.png
   house: 衆議院議員
   district: 比例東京(東京26区)
   party_roles:
@@ -72,6 +74,7 @@ members:
 - id: kawai
   name: 河合道雄
   kana: かわいみちお
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/cb65621c90bb4aba84b0ad33a899dd8a/kawai-green.png
   house: 衆議院議員
   district: 比例南関東
   party_roles:
@@ -108,6 +111,7 @@ members:
 - id: hayashi
   name: 林拓海
   kana: はやしたくみ
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/44a2c53285284095bc8ec71d137eacc0/hayashi-green.png
   house: 衆議院議員
   district: 比例東北
   party_roles:
@@ -140,6 +144,7 @@ members:
 - id: suda
   name: 須田英太郎
   kana: すだえいたろう
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/e54799211d774575965d7c83234b9d9a/suda_greeb.jpg
   house: 衆議院議員
   district: 比例東海
   party_roles:
@@ -182,6 +187,7 @@ members:
 - id: muto
   name: 武藤かず子
   kana: むとうかずこ
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/a92759be83334e6a94ff7f66c35e21c7/mutou_green2.jpg
   house: 衆議院議員
   district: 比例北関東
   party_roles:
@@ -218,6 +224,7 @@ members:
 - id: kobayashi
   name: 小林修平
   kana: こばやししゅうへい
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/b00a3331b5b445348c495aa9571ccb30/kobayashi_green.jpg
   house: 衆議院議員
   district: 比例南関東(千葉5区)
   party_roles:
@@ -254,6 +261,7 @@ members:
 - id: dobashi
   name: 土橋章宏
   kana: どばしあきひろ
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/c994b622a0b44fd496cc0b2836b37e6a/dobashi-green.png
   house: 衆議院議員
   district: 比例東京(東京2区)
   party_roles:
@@ -294,6 +302,7 @@ members:
 - id: yamada
   name: 山田瑛理
   kana: やまだえり
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/bf480bd60e5f4767935fbe7eda18c468/6.png
   house: 衆議院議員
   district: 比例南関東
   party_roles:
@@ -328,6 +337,7 @@ members:
 - id: takayama
   name: 高山聡史
   kana: たかやまさとし
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/cf1d99383c504d38810f34c34419f5d8/takayama_green.jpg
   house: 衆議院議員
   district: 比例東京
   party_roles:
@@ -367,6 +377,7 @@ members:
 - id: mineshima
   name: 峰島侑也
   kana: みねしまゆうや
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/bd0dd8be5696436ca951888deb062a17/mineshima-green.png
   house: 衆議院議員
   district: 比例東京(東京7区)
   party_roles:
@@ -409,6 +420,7 @@ members:
 - id: furukawa
   name: 古川あおい
   kana: ふるかわあおい
+  photo: https://images.microcms-assets.io/assets/4bcffd74e0c14144b50ea8be93e5e95a/df9e4d330fe34124b8324f6a84c7c57e/0617_furukawa.jpg
   house: 衆議院議員
   district: 比例九州
   party_roles:
@@ -445,3 +457,4 @@ members:
   - name: チームみらい公式サイト 国会議員プロフィール
     url: https://team-mir.ai/member/shugiin/aoi-furukawa
     checked: '2026-11-24'
+photo_note: 顔写真は公式サイトの国会議員プロフィールの画像を、そのURLから表示している（このリポジトリには保存しない）
