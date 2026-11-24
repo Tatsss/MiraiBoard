@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiraiBoard — チームみらいを図で知る</title>
+<meta name="description" content="チームみらいが何を目指し、政策づくりと広聴がどう回り、12人の国会議員が何に取り組んでいるのかを、公開情報だけで図にした台帳。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">Team Mirai, explained</div>
+  <h1>声が<span class="g">政策</span>になるまでを、<br>図で見る。</h1>
+  <p class="lead" id="lead"></p>
+  <div class="note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>公開情報だけで作った非公式の台帳です。すべての項目に出典があり、分からないことは「不明」と書いています。見えるのは表に出た動きだけです。</span></div>
+</div></section>
+
+<section class="blk" style="border-top:0;padding-top:12px"><div class="w">
+  <div class="tiles" id="tiles"></div>
+  <div class="src" id="tiles-src"></div>
+</div></section>
+
+<section class="blk"><div class="w">
+  <div class="bh"><div class="k">The cycle</div><div><h2>党の仕事は、4つの段階で回っている</h2><p id="cycle-lead"></p></div></div>
+  <div class="ringwrap"><div class="ring" id="ring"></div><div class="sheet" id="sheet"></div></div>
+  <div style="margin-top:22px"><span id="lg"></span></div>
+  <div class="src" id="ring-src"></div>
+</div></section>
+
+<section class="blk alt"><div class="w">
+  <div class="bh"><div class="k">Pipeline</div><div><h2 id="pipe-title"></h2><p id="pipe-lead"></p></div></div>
+  <div class="pipe" id="pipe"></div>
+  <div class="side" id="pipe-side"></div>
+  <div class="src" id="pipe-src"></div>
+</div></section>
+
+<section class="blk"><div class="w">
+  <div class="bh"><div class="k">Explore</div><div><h2>もっと詳しく</h2></div></div>
+  <div class="next">
+    <a href="flow.html"><div class="t">政策づくりの現場 →</div><p>段階ごとの担当、使っている道具、目標の進み具合、公開の場で挙がっている課題、見えていないこと</p></a>
+    <a href="people.html"><div class="t">国会議員12人 →</div><p>顔ぶれ、役職、議員室の目標、国会での動き、発信</p></a>
+    <a href="org.html"><div class="t">体制と目標 →</div><p>党首と4人の執行役員、11の本部、それぞれの目標</p></a>
+  </div>
+</div></section>
+</main>
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('index.html');
+const P = MB.process, party = MB.party;
+$('#lead').textContent = party.summary + ' 党がどんな仕組みで政策をつくり、どこまで進んでいて、どこで止まっているのかを、公開されている目標（OKR）と公式サイトから図にしました。';
+const pick = ['2026年衆院選で獲得した議席数','国会議員','サポーター数','2026年衆院選・比例代表での得票数'];
+$('#tiles').innerHTML = party.numbers.items.filter(n => pick.includes(n.label)).map(n => `<div class="tile"><div class="v">${esc(n.value.replace(/（.*）/, ''))}</div><div class="l">${esc(n.label)}</div></div>`).join('');
+$('#tiles-src').innerHTML = `${esc(party.numbers.as_of)} 時点。` + srcHtml(party.numbers.source);
+
+/* リング図: 4つの段階。外周の小さな印は、その段階の目標（KR）1つずつ */
+const groups = Object.fromEntries((OKR.themes.find(t => t.key === 'demo') || { groups: [] }).groups.map(g => [g.tag, g]));
+const ST = P.stages.filter(s => s.key !== 'cycle');
+$('#cycle-lead').textContent = '「聴く → 磨く → 動かす → 伝える」。党自身が、目標をこの順に並べて公開しています。輪の外側の印が目標1つずつで、形と色で進み具合を示します。段階を押すと説明が出ます。';
+const cx = 260, cy = 260, R1 = 150, R2 = 226, gap = 0.035;
+const pol = (r, a) => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+const arc = (a0, a1) => { const [x0, y0] = pol(R2, a0), [x1, y1] = pol(R2, a1), [x2, y2] = pol(R1, a1), [x3, y3] = pol(R1, a0); return `M${x0},${y0} A${R2},${R2} 0 0 1 ${x1},${y1} L${x2},${y2} A${R1},${R1} 0 0 0 ${x3},${y3} Z`; };
+const shade = ['color-mix(in srgb,var(--brand) 88%,#000)', 'color-mix(in srgb,var(--brand) 92%,#fff)', 'color-mix(in srgb,var(--brand) 38%,var(--paper))', 'color-mix(in srgb,var(--brand) 22%,var(--paper))'];
+let svg = `<svg viewBox="0 0 520 520" role="img" aria-label="デジタル民主主義サイクルの図"><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--ink-3)"/></marker></defs>`;
+ST.forEach((s, i) => {
+  const a0 = -Math.PI / 2 + i * Math.PI / 2 + gap, a1 = -Math.PI / 2 + (i + 1) * Math.PI / 2 - gap, am = (a0 + a1) / 2;
+  const [tx, ty] = pol((R1 + R2) / 2, am);
+  svg += `<path class="seg-path" data-i="${i}" d="${arc(a0, a1)}" fill="${shade[i]}"/>`;
+  const tc = i < 2 ? '#fff' : 'var(--ink)';
+  svg += `<text x="${tx}" y="${ty - 4}" text-anchor="middle" font-size="26" font-weight="800" fill="${tc}" pointer-events="none">${esc(s.tag)}</text>`;
+  svg += `<text x="${tx}" y="${ty + 20}" text-anchor="middle" font-size="12" fill="${tc}" opacity=".85" pointer-events="none">${esc(s.officer || '')}</text>`;
+  const krs = (groups[s.tag] || { krs: [] }).krs;
+  krs.forEach((id, j) => { const a = a0 + (a1 - a0) * (j + .5) / krs.length; const [mx, my] = pol(R2 + 20, a); const c = SC[(KR[id] || {}).status] || 'todo';
+    svg += `<foreignObject x="${mx - 11}" y="${my - 11}" width="22" height="22">${mk(id)}</foreignObject>`; });
+});
+svg += `<circle cx="${cx}" cy="${cy}" r="${R1 - 18}" fill="var(--paper)" stroke="var(--line)"/><text x="${cx}" y="${cy - 10}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink-3)" letter-spacing="2">DIGITAL</text><text x="${cx}" y="${cy + 10}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink-3)" letter-spacing="2">DEMOCRACY</text><text x="${cx}" y="${cy + 34}" text-anchor="middle" font-size="15" font-weight="800" fill="var(--ink)">サイクル</text></svg>`;
+$('#ring').innerHTML = svg;
+function sheet(i) {
+  const s = ST[i], krs = (groups[s.tag] || { krs: [] }).krs;
+  const c = krs.reduce((a, id) => { const x = (KR[id] || {}).status; a[x] = (a[x] || 0) + 1; return a; }, {});
+  $$('.seg-path').forEach(p => p.style.opacity = +p.dataset.i === i ? 1 : .35);
+  $('#sheet').innerHTML = `<div class="num">0${i + 1}</div><h3>${esc(s.tag)}</h3><p class="sub">${esc(s.title)}</p>
+  <dl><dt>していること</dt><dd>${esc(s.what)}</dd><dt>担当</dt><dd>${s.officer ? `執行役員 ${esc(s.officer)}／` : ''}${esc((s.units || []).join('・'))}</dd><dt>使う道具</dt><dd>${esc((s.tools || []).join('・') || '—')}</dd><dt>目標の状態</dt><dd>${['達成', '順調', '注意', '未着手'].filter(x => c[x]).map(x => st(x) + ` ${c[x]}`).join('　')}</dd></dl>
+  <a class="more" href="flow.html#${esc(s.key)}">この段階を詳しく見る →</a>`;
+}
+$$('.seg-path').forEach(p => p.addEventListener('click', () => sheet(+p.dataset.i)));
+sheet(0); $('#lg').innerHTML = legend();
+$('#ring-src').innerHTML = srcHtml(P.intro_source) + '　' + srcHtml(OKR_SRC);
+
+/* パイプライン図: 声 → 論点 → 政調 → 公表 */
+const pp = P.pipeline;
+$('#pipe-title').textContent = pp.title; $('#pipe-lead').textContent = pp.lead;
+const dial = (r, c) => { const C = 2 * Math.PI * 48, v = Math.min(1, r ?? 0); return `<svg class="dial" viewBox="0 0 118 118"><circle cx="59" cy="59" r="48" fill="none" stroke="var(--mute)" stroke-width="10"/><circle cx="59" cy="59" r="48" fill="none" stroke="var(--${c})" stroke-width="10" stroke-linecap="round" stroke-dasharray="${C * v} ${C}" transform="rotate(-90 59 59)"/></svg>`; };
+$('#pipe').innerHTML = pp.nodes.map((n, i) => { const k = KR[n.kr] || {}; const r = ratio(k.progress); const c = SC[k.status] || 'todo';
+  const [a, b] = (k.progress || '').split('/');
+  return `<div class="pnode"><div style="position:relative;width:118px">${dial(r, c)}<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><b style="font-size:22px;letter-spacing:-.02em">${esc(a || '—')}</b><span class="small muted">/ ${esc(b || '')}</span></div></div>
+  ${i < pp.nodes.length - 1 ? '<svg class="arrow" viewBox="0 0 100 14" preserveAspectRatio="none"><line x1="0" y1="7" x2="92" y2="7" stroke="var(--line-2)" stroke-width="2" stroke-dasharray="4 4"/><path d="M92,2 L100,7 L92,12" fill="var(--line-2)"/></svg>' : ''}
+  <h4>${esc(n.label)}</h4><p>${esc(n.note)}</p><div style="margin-top:8px">${st(k.status)}</div></div>`; }).join('');
+$('#pipe-side').innerHTML = pp.side.map(n => { const k = KR[n.kr] || {}; const r = ratio(k.progress);
+  return `<div class="scard"><div class="t">${esc(n.label)}</div><div class="meter"><i style="width:${Math.min(100, (r || 0) * 100)}%"></i></div><div style="display:flex;justify-content:space-between;margin-top:8px;align-items:center"><span class="small muted">${esc(k.owner)}・${esc(k.progress || '—')}</span>${st(k.status)}</div></div>`; }).join('');
+$('#pipe-src').innerHTML = '数字は目標に対する実績（例: 5/20件 ＝ 目標20件のうち5件）。' + srcHtml(OKR_SRC);
+</script>
+</body></html>

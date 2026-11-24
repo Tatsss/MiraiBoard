@@ -151,3 +151,26 @@ stages:
   public_issues: []
   unknown:
   - サイクルの評価指標（開発本部と策定する予定）
+pipeline:
+  title: 声が政策になるまで
+  lead: 集めた声が論点になり、政務調査会に渡り、公表されるまでの各段階を、党が公開しているOKRの数字で並べた。
+  nodes:
+  - kr: kocho-o3-kr1
+    label: 声を集める
+    note: ツールで集めて公開した声
+  - kr: kocho-o1-kr1
+    label: 論点ごとに束ねる
+    note: 1,000件以上の意見が集まった論点
+  - kr: kocho-o1-kr2
+    label: 政務調査会に渡す
+    note: 結果と示唆を渡した政策論点
+  - kr: kocho-o1-kr3
+    label: 公表まで回しきる
+    note: 聴くから公表まで完了した論点
+  side:
+  - kr: seicho-o2-kr2-2
+    label: 重要法案をサイクルで扱う
+  - kr: seicho-o1-kr1-1
+    label: 全法案の賛否と根拠を公開
+  - kr: giin-o1-kr1
+    label: 各議員室で「政府を動かした」事例

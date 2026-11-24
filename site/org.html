@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>体制と目標 — MiraiBoard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">Organization</div>
+  <h1>体制と<span class="g">目標</span>。</h1>
+  <p class="lead" id="lead"></p>
+</div></section>
+
+<section class="blk" style="border-top:0;padding-top:0"><div class="w">
+  <div class="org" id="org"></div>
+  <div class="src" id="org-src"></div>
+</div></section>
+
+<section class="blk alt"><div class="w">
+  <div class="bh"><div class="k">Party goals</div><div><h2>党全体の目標</h2><p>党全体の目標は、執行役員会の目標と同じです。各本部の目標は、ここにつながる形で立てられています。</p></div></div>
+  <div class="cards" id="goals"></div>
+  <div class="src" id="goals-src"></div>
+</div></section>
+
+<section class="blk"><div class="w">
+  <div class="bh"><div class="k">By department</div><div><h2>本部ごとの目標と進み具合</h2><p>本部を選ぶと、その本部の目標（Objective）と、それを測る指標（KR）の状態が出ます。</p></div></div>
+  <div class="toolbar"><div class="seg" id="tabs"></div></div>
+  <div id="panel"></div>
+  <div style="margin-top:16px" id="lg"></div>
+</div></section>
+
+<section class="blk alt"><div class="w">
+  <div class="bh"><div class="k">Role of members</div><div><h2>党が議員に期待する役割</h2><p id="policy"></p><div class="src" id="policy-src"></div></div></div>
+</div></section>
+</main>
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('org.html');
+$('#lg').innerHTML = legend();
+const party = MB.party;
+$('#lead').textContent = party.cycle.summary + ' 党首の下に4人の執行役員がいて、それぞれが本部を受け持っています。';
+const hqByName = n => OKR.hq.find(h => h.name === n || h.name.startsWith(n));
+const people = Object.fromEntries(MB.members.members.map(m => [m.name, m]));
+const nodeP = (role, name) => { const m = people[name]; return `<div class="onode">${m ? `<a href="people.html#${esc(m.id)}">` : ''}<div class="r">${esc(role)}</div><div class="n">${esc(name)}</div>${m ? '</a>' : ''}</div>`; };
+$('#org').innerHTML = `<div class="lead-node">${nodeP('党首', '安野貴博')}</div><div class="vline"></div>
+<div class="ocols">${party.cycle.roles.map(r => `<div class="ocol">${nodeP('執行役員・' + r.step, r.officer)}<div class="units">${r.scope.split('・').map(u => { const h = hqByName(u); return `<button class="unit" data-hq="${esc(h ? h.id : '')}">${esc(u)}</button>`; }).join('')}</div></div>`).join('')}</div>`;
+$('#org-src').innerHTML = '本部を押すと、下でその本部の目標が開きます。' + srcHtml(party.cycle.source);
+$('#goals').innerHTML = OKR.party.map(g => `<div class="card"><span class="chip">${esc(g.label)}</span><h3>${esc(g.title)}</h3><p>${esc(g.objective)}</p><ul class="small ink2" style="padding-left:18px;margin:10px 0 0">${g.points.slice(0, 4).map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>`).join('');
+$('#goals-src').innerHTML = srcHtml(OKR_SRC);
+let cur = 0;
+$('#tabs').innerHTML = OKR.hq.map((h, i) => `<button class="${i === 0 ? 'on' : ''}" data-i="${i}">${esc(h.name)}</button>`).join('');
+function show(i) { cur = i; const h = OKR.hq[i]; $$('#tabs button').forEach(b => b.classList.toggle('on', +b.dataset.i === i));
+  $('#panel').innerHTML = `<div class="sheet"><h3 style="font-size:26px">${esc(h.name)}</h3><p class="sub">${esc(h.desc || '')}</p></div>` + h.objectives.map(o => `<div class="obj"><div class="ot"><span class="small muted" style="margin-right:8px">${esc(o.label)}</span>${esc(o.title)}</div>${o.objective ? `<div class="od">${esc(o.objective)}</div>` : ''}${o.krs.map(k => { const r = ratio(k.progress); return `<div class="krrow"><span style="flex:1">${esc(k.summary)}${r !== null ? `<div class="meter" style="margin-top:6px;max-width:300px"><i style="width:${Math.min(100, r * 100)}%"></i></div>` : ''}</span><span style="text-align:right">${st(k.status)}${k.progress ? `<div class="pg">${esc(k.progress)}</div>` : ''}</span></div>`; }).join('')}</div>`).join('') + `<div class="src">${srcHtml({ name: 'チームみらい 公開OKR（本部）', url: h.source })}</div>`; }
+$('#tabs').onclick = e => { const b = e.target.closest('button'); if (b) show(+b.dataset.i); };
+$('#org').onclick = e => { const b = e.target.closest('.unit'); if (!b || !b.dataset.hq) return; const i = OKR.hq.findIndex(h => h.id === b.dataset.hq); if (i >= 0) { show(i); $('#tabs').scrollIntoView({ behavior: 'smooth', block: 'center' }); } };
+show(0);
+$('#policy').textContent = party.member_role_policy.summary; $('#policy-src').innerHTML = srcHtml(party.member_role_policy.source);
+</script>
+</body></html>

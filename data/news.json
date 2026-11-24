@@ -1,0 +1,1569 @@
+{
+ "source": {
+  "name": "チームみらい公式サイト お知らせ一覧",
+  "url": "https://team-mir.ai/news/all",
+  "checked": "2026-11-24"
+ },
+ "items": [
+  {
+   "date": "2026-11-13",
+   "title": "note「障害のある方の暮らしの節目」AIインタビューでいただいた声と、これから",
+   "url": "https://note.com/team_mirai_jp/n/n7ec2b11f47e8",
+   "kind": "note",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-13",
+   "title": "note「発足から2ヶ月 広聴本部に寄せられた「声」に答えます！」",
+   "url": "https://note.com/team_mirai_jp/n/nab7280f54ae4",
+   "kind": "note",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-13",
+   "title": "YouTube「週刊チームみらいNEWS」（AIサイバー対策提言のその後／デジタル民主主義）",
+   "url": "https://youtu.be/qJgyB2e040s",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-13",
+   "title": "定例会見を実施",
+   "url": "https://note.com/team_mirai_jp/n/n3fd703c9d2a6",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-12",
+   "title": "YouTube 政策討論ロールプレイ「食料品の消費税減税、賛成派と反対派に分かれて本気でぶつかってみた」",
+   "url": "https://youtu.be/LNP2OzRniwE",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-12",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/n95e85f5429b2",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-11-11",
+   "title": "YouTube【国会DX】処理能力10倍へ！目指す5つの国会の姿と道筋",
+   "url": "https://youtu.be/s1TvO1hkQ3M",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-11",
+   "title": "note グレン・ワイル氏×安野貴博 超党派勉強会レポート（後編）「民主主義はまだ始まってもいない」",
+   "url": "https://note.com/team_mirai_jp/n/n8f471c263382",
+   "kind": "note",
+   "members": [
+    "anno"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-11-11",
+   "title": "note グレン・ワイル氏 超党派勉強会レポート（前編）「AIは民主主義をどう変えるか」",
+   "url": "https://note.com/team_mirai_jp/n/n8364cfd5a683",
+   "kind": "note",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-11",
+   "title": "衆議院文部科学委員会にて河合道雄が質疑",
+   "url": "https://note.com/team_mirai_log/n/n79891dd375ba",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 文部科学委員会"
+  },
+  {
+   "date": "2026-11-11",
+   "title": "衆議院厚生労働委員会にて林拓海が質疑",
+   "url": "https://note.com/team_mirai_log/n/n0c08a002699e",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-11-11",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/nd9848eeb466c",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "ポッドキャスト「チみラジ」#04 配信",
+   "url": "https://youtu.be/wGVx9BusWyc",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-10",
+   "title": "参議院総務委員会にて安野貴博が質疑",
+   "url": "https://note.com/team_mirai_log/n/n8219fbf933ff",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "衆議院本会議にて土橋章宏が質疑",
+   "url": "https://note.com/team_mirai_log/n/n265e0cd42952",
+   "kind": "国会",
+   "members": [
+    "dobashi"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "衆議院本会議にて高山聡史が討論",
+   "url": "https://note.com/team_mirai_log/n/n55a5e6391e74",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "YouTube「週刊チームみらいNEWS」（消費税・支援金法案に反対／新チャンネル「1億人の事情」）",
+   "url": "https://youtu.be/Y7tXV1veA90",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-06",
+   "title": "衆議院地域活性化・こども政策・デジタル社会形成に関する特別委員会にて武藤かず子が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne661d5423d01",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-11-06",
+   "title": "衆議院経済産業委員会にて小林修平が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne6109e5aa877",
+   "kind": "国会",
+   "members": [
+    "kobayashi"
+   ],
+   "committee": "衆議院 経済産業委員会"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/nbdcc66cb0346",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "衆議院財務金融委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/n99a8efb6f5f3",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "衆議院本会議にて峰島侑也が討論",
+   "url": "https://note.com/team_mirai_log/n/ncfdb88fbcc51",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "定例会見を実施",
+   "url": "https://note.com/team_mirai_jp/n/n7c4b8677b5f1",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-06",
+   "title": "党員・寄付者向けニュースレター「チームみらいTIMES」を開始",
+   "url": "/news/20261106",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-01",
+   "title": "新YouTubeチャンネル「1億人の事情」を公開",
+   "url": "https://www.youtube.com/watch?v=JBAauWyitB0",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-11-01",
+   "title": "YouTube「林拓海 本人解説：10/20衆議院本会議を実況」",
+   "url": "https://youtu.be/RpnWLP9jcPk",
+   "kind": "動画・配信",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "YouTube「週刊チームみらいNEWS」（AI失業対策提言・消費減税）",
+   "url": "https://youtu.be/e0iJhOiH5-Y",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-29",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/nf05c946cdbcb",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "衆議院外務委員会にて土橋章宏が質疑",
+   "url": "https://note.com/team_mirai_log/n/n083fb04911fc",
+   "kind": "国会",
+   "members": [
+    "dobashi"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "衆議院文部科学委員会にて河合道雄が質疑",
+   "url": "https://note.com/team_mirai_log/n/nffa9cd373972",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 文部科学委員会"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "参議院デジタル・AI特別委員会にて安野貴博が質疑",
+   "url": "https://note.com/team_mirai_log/n/nbf8b6768a8fc",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 デジタル・AI特別委員会"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "定例会見を実施",
+   "url": "https://note.com/team_mirai_jp/n/nb716674ecf8a",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-27",
+   "title": "Podcast「チみラジ」#02 配信",
+   "url": "https://youtu.be/y64F55odHPQ",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-27",
+   "title": "衆議院農林水産委員会にて林拓海が質疑",
+   "url": "https://note.com/team_mirai_log/n/nfb3086f9dc27",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-10-27",
+   "title": "衆議院総務委員会にて山田瑛理が質疑",
+   "url": "https://note.com/team_mirai_log/n/n9dcf4a98a9fd",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 総務委員会"
+  },
+  {
+   "date": "2026-10-26",
+   "title": "衆議院政治改革特別委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne49bd7fd7a69",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 政治改革特別委員会"
+  },
+  {
+   "date": "2026-10-26",
+   "title": "衆議院選挙制度見直し案への賛否を表明",
+   "url": "https://note.com/team_mirai_jp/n/n7eb7336e6d1e",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-26",
+   "title": "YouTube 緊急配信「AI失業対策提言」解説",
+   "url": "https://youtu.be/zWKFdgUyFL0",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-26",
+   "title": "AI失業対策提言を木原官房長官に提出",
+   "url": "https://team-mir.ai/lp/ai-shitsugyo/proposal.html",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-23",
+   "title": "サイバーセキュリティ緊急提言を古川デジタル大臣へ提出",
+   "url": "https://team-mir.ai/lp/ai-cybersecurity/proposal.html",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-23",
+   "title": "閉会中の活動を議員12人分まとめて大公開！",
+   "url": "https://note.com/team_mirai_jp/n/na3d8457550a2",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-22",
+   "title": "「まる見えチャンネル」開設",
+   "url": "https://www.youtube.com/@team_mirai_marumie",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-22",
+   "title": "チームみらい「まる見え」宣言",
+   "url": "https://note.com/takahiroanno/n/n5c01c5f52dd0",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-22",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/n6e149bc9974b",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "衆議院財務金融委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/n6c937a4e8447",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "ポッドキャスト「チみラジ」開始",
+   "url": "https://linktr.ee/teammirai_radio",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-20",
+   "title": "衆議院本会議にて林拓海が質疑",
+   "url": "https://note.com/team_mirai_log/n/n935130161ce7",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "YouTube「山田ゆうじさん紹介動画」",
+   "url": "https://youtu.be/-NTw3cskAuA",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-14",
+   "title": "定例会見を実施（小諸市議選の公認候補予定・山田ゆうじさんを発表）",
+   "url": "https://note.com/team_mirai_jp/n/n2f79d1d07130",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-14",
+   "title": "衆議院予算委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/n50db3476b55c",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "YouTube「グレン・ワイル氏『AI×民主主義』勉強会」公開",
+   "url": "https://youtu.be/6tlkmYxicRE",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-08",
+   "title": "幹部会見（古川幹事長）を実施",
+   "url": "https://note.com/team_mirai_jp/n/n2e76c9e697ed",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-08",
+   "title": "衆議院本会議にて古川あおいが代表質問",
+   "url": "https://note.com/team_mirai_jp/n/n27749cadbdcc",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-10-06",
+   "title": "YouTube「はじめまして！広聴本部です」",
+   "url": "https://youtu.be/4ytOt_jDn7A",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-10-05",
+   "title": "第222回臨時国会召集、安野党首のぶら下がり取材を書き起こし公開",
+   "url": "https://note.com/team_mirai_jp/n/n905031d6aba4",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-29",
+   "title": "YouTube「概算要求語らナイト」",
+   "url": "https://www.youtube.com/live/MYG-PIYlLxY",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-25",
+   "title": "note「国会にAIを、政治にもっと多くの声を」",
+   "url": "https://note.com/team_mirai_jp/n/n33b7cbce0785",
+   "kind": "note",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-23",
+   "title": "YouTube「中北浩爾教授×峰島侑也 ランキング投票対談」",
+   "url": "https://youtu.be/kI5NtjHJ3-w",
+   "kind": "動画・配信",
+   "members": [
+    "mineshima"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-09-20",
+   "title": "YouTube「チームみらいガチ議論大公開 第1弾：選挙制度」",
+   "url": "https://youtu.be/ZiHBp_TXvUA",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-20",
+   "title": "全国キャラバン 京都ほか関西開催（鹿児島・熊本は延期）",
+   "url": "https://team-mir.ai/lp/events/zenkoku-caravan.html",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-18",
+   "title": "YouTube「週刊チームみらいNEWS」（新体制の報告）",
+   "url": "https://www.youtube.com/live/pogebhoL9oA",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-17",
+   "title": "党首会見を実施（新体制の人事を発表、広聴本部を新設）",
+   "url": "https://note.com/team_mirai_jp/n/n10f5d4ab80eb",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-15",
+   "title": "YouTube「フランスでインタビューしまくった学びをシェアする配信」",
+   "url": "https://www.youtube.com/live/ZnjTKz8cHGA",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-12",
+   "title": "YouTube「永田町エンジニアチーム密着」",
+   "url": "https://youtu.be/0wXNPd3e3fE",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-11",
+   "title": "YouTube「週刊チームみらいNEWS」第6回",
+   "url": "https://www.youtube.com/live/GvBC3A_adwg",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-10",
+   "title": "YouTube「デジタル民主主義サミット2026の質問に回答」",
+   "url": "https://youtu.be/JRGvPboFMLk",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-07",
+   "title": "「サンラグ選手権RCV開票LIVE」を実施",
+   "url": "https://www.youtube.com/live/tmMrMdWdm3A",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-03",
+   "title": "YouTube「週刊チームみらいNEWS」第5回",
+   "url": "https://www.youtube.com/live/Y4bY0Qox1JA",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-01",
+   "title": "note「党大会の舞台裏」インタビュー記事を公開",
+   "url": "https://note.com/team_mirai_jp/n/n2092f0dc600d",
+   "kind": "note",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-09-01",
+   "title": "「サンラグ方式 解説してみた」選手権",
+   "url": "https://note.com/team_mirai_jp/n/n38c33b6a1bbf",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-08-28",
+   "title": "YouTube「選挙制度について語ろうナイト」配信",
+   "url": "https://www.youtube.com/live/QKpQwEH4S48",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-08-28",
+   "title": "高市総理へのAI家庭教師を実施",
+   "url": "https://note.com/team_mirai_jp/n/n5a583ac1092a",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-08-25",
+   "title": "学生チーム「9月会」を開催いたします",
+   "url": "/news/20260825",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-08-15",
+   "title": "終戦81年にあたって",
+   "url": "/news/20260815",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-08-02",
+   "title": "党職員・秘書採用ページを開設",
+   "url": "/recruit",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-07-31",
+   "title": "令和8年熊本地震 災害義援金の受付を開始",
+   "url": "/news/20260731",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-07-30",
+   "title": "全国キャラバン2026開催中！",
+   "url": "/lp/events/zenkoku-caravan.html",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-07-28",
+   "title": "オンライングッズストアを公開",
+   "url": "https://team-mir.stores.jp/",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-07-16",
+   "title": "第1回党大会 Team Mirai Summit 2026 配信のお知らせ",
+   "url": "/news/20260716",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-05-14",
+   "title": "第1回党大会を開催いたします",
+   "url": "/news/20260514",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-05-08",
+   "title": "結党1周年を迎えて",
+   "url": "/news/20260508",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-05-08",
+   "title": "チームみらい結党1周年動画を公開",
+   "url": "https://youtu.be/MW1yoZQzrCY",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-05-03",
+   "title": "憲法記念日にあたって",
+   "url": "/news/20260503",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-23",
+   "title": "衆議院災害対策特別委員会にて山田瑛理が質疑",
+   "url": "https://note.com/team_mirai_log/n/n2e4af2e7d18c",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 災害対策特別委員会"
+  },
+  {
+   "date": "2026-04-23",
+   "title": "衆議院地域活性化・こども政策・デジタル社会形成に関する特別委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/n0789ecb7d1b5",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-04-23",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/n7ff4bba5966d",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne1092c868018",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "参議院デジタル社会の形成及び人工知能の活用等に関する特別委員会にて安野貴博が質疑",
+   "url": "https://note.com/team_mirai_log/n/n2437c4376a68",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院経済産業委員会にて河合道雄が質疑",
+   "url": "https://note.com/team_mirai_log/n/nc03cf123e5e7",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 経済産業委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院外務委員会にて宇佐美登が「最新の中東情勢」「投資協定」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nd7703a32f495",
+   "kind": "国会",
+   "members": [
+    "usami"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院農林水産委員会にて林拓海が「家畜伝染病予防・感染対応のための管理体制とAI活用」「立入検査の運用と実効性」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n56ad21df8a16",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院文部科学委員会にて河合道雄が「特別な教育的支援を必要とする児童生徒への支援に向けた情報連携」「国立博物館、国立美術館における次期中期目標」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n7f87d725a58e",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 文部科学委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院財務金融委員会にて峰島侑也が「給付付き税額控除」「銀行のAPI公開」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nbcf716ff666d",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院国土交通委員会にて山田瑛理が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne0a6aa56ae2e",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 国土交通委員会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院連合審査会にて高山聡史が「インテリジェンスにおける技術リーダーシップ」「情報部門に対する評価とアウトプットに対する事後検証の仕組み」について質疑",
+   "url": "https://note.com/team_mirai_log/n/ne4f65bb57796",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 連合審査会"
+  },
+  {
+   "date": "2026-04-22",
+   "title": "衆議院厚生労働委員会にて古川あおいが「高額療養費」「出産なび」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n76317b90cae6",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-04-21",
+   "title": "参議院総務委員会にて安野貴博が「サイバー防衛AIモデルの登場を踏まえた対応」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n367657c81937",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-04-21",
+   "title": "衆議院厚生労働委員会にて古川あおいが質疑",
+   "url": "https://note.com/team_mirai_log/n/n9be75efd2352",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-04-20",
+   "title": "「国民が安心して利用できる高額療養費制度の見直し法案」を共同提出",
+   "url": "https://note.com/team_mirai_jp/n/n98527cb88bf6",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-17",
+   "title": "YouTube「4月第3週活動報告」",
+   "url": "https://www.youtube.com/watch?v=bhc9Oi6rOSs",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-17",
+   "title": "衆議院外務委員会にて宇佐美登が質疑",
+   "url": "https://note.com/team_mirai_log/n/nf31678d8f56e",
+   "kind": "国会",
+   "members": [
+    "usami"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-04-17",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/n10098b211cc0",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-17",
+   "title": "衆議院厚生労働委員会にて古川あおいが質疑",
+   "url": "https://note.com/team_mirai_log/n/nd9fef371fd87",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-04-16",
+   "title": "衆議院総務委員会にて武藤かず子が「茨城県坂東市ヤード火災を契機とした消防行政上の問題提起」「自動運転通信のインフラ整備」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n5a1e4e1f1d9b",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": "衆議院 総務委員会"
+  },
+  {
+   "date": "2026-04-16",
+   "title": "衆議院地域活性化・こども政策・デジタル社会形成に関する特別委員会にて小林修平が質疑",
+   "url": "https://note.com/team_mirai_log/n/n41b6e967b329",
+   "kind": "国会",
+   "members": [
+    "kobayashi"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-04-16",
+   "title": "衆議院農林水産委員会にて林拓海が「フードバレーの現状と推進策」「農林水産省の統計データ収集・集計の現状とデジタル化の必要性」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nc64b1dfab650",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-04-16",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/nf7589e69dfd7",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-16",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/n715204acf4d5",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-04-15",
+   "title": "衆議院厚生労働委員会にて古川あおいが「高額療養費制度見直し」「OTC類似薬の一部保険外療養」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nc4c9f704b0d8",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-04-15",
+   "title": "衆議院外務委員会にて土橋章宏が質疑",
+   "url": "https://note.com/team_mirai_log/n/n5235c79bed40",
+   "kind": "国会",
+   "members": [
+    "dobashi"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-04-15",
+   "title": "参議院デジタル社会の形成及び人工知能の活用等に関する特別委員会にて安野貴博が質疑",
+   "url": "https://note.com/team_mirai_log/n/n483e605f49d3",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": null
+  },
+  {
+   "date": "2026-04-15",
+   "title": "衆議院経済産業委員会にて河合道雄が質疑",
+   "url": "https://note.com/team_mirai_log/n/n66aeddaadce3",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 経済産業委員会"
+  },
+  {
+   "date": "2026-04-15",
+   "title": "衆議院国土交通委員会にて山田瑛理が「港湾DX化並びに自動化と国際競争力の強化」「タワーマンションの老朽化対応」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nd9bf5f2c4226",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 国土交通委員会"
+  },
+  {
+   "date": "2026-04-15",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/n9058b1404c24",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-14",
+   "title": "衆議院農林水産委員会にて林拓海が質疑",
+   "url": "https://note.com/team_mirai_log/n/n3e2b1ee259be",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-04-14",
+   "title": "衆議院総務委員会にて武藤かず子が「JICT法改正」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n24ba3aa576fe",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": "衆議院 総務委員会"
+  },
+  {
+   "date": "2026-04-14",
+   "title": "衆議院財務金融委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/ncf9cb758aa4b",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-04-14",
+   "title": "熊本地震の発生から10年を迎えて",
+   "url": "/news/20260414",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-11",
+   "title": "京都新聞の堀場さち子氏に関する報道について",
+   "url": "https://note.com/team_mirai_jp/n/n94e01051bbcf",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-10",
+   "title": "YouTube「4月2週目活動報告」",
+   "url": "https://www.youtube.com/watch?v=3Fci6nDoWsc",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-10",
+   "title": "衆議院厚生労働委員会にて古川あおいが質疑",
+   "url": "https://note.com/team_mirai_log/n/nf37ddc80d272",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 厚生労働委員会"
+  },
+  {
+   "date": "2026-04-10",
+   "title": "衆議院外務委員会にて宇佐美登が質疑",
+   "url": "https://note.com/team_mirai_log/n/n8beca742fc5e",
+   "kind": "国会",
+   "members": [
+    "usami"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-04-10",
+   "title": "衆議院国土交通委員会にて山田瑛理が「物資の流通の効率化に関する法律の一部を改正する法律案」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n6a70c6ff804a",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 国土交通委員会"
+  },
+  {
+   "date": "2026-04-10",
+   "title": "衆議院財務金融委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/nbd388b2dc6ef",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-04-10",
+   "title": "衆議院内閣委員会にて高山聡史が「国家情報会議設置法案」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nb4e2508beaa7",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-09",
+   "title": "チームみらい党首会見を新しい質疑形式で実施",
+   "url": "https://note.com/team_mirai_jp/n/n5c62a7c8fd11",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-09",
+   "title": "衆議院農林水産委員会にて林拓海が質疑",
+   "url": "https://note.com/team_mirai_log/n/n8583dd1959ae",
+   "kind": "国会",
+   "members": [
+    "hayashi"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-04-09",
+   "title": "衆議院憲法審査会にて古川あおいが発言",
+   "url": "https://note.com/team_mirai_log/n/ne623b8084642",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 憲法審査会"
+  },
+  {
+   "date": "2026-04-09",
+   "title": "衆議院安全保障委員会にて山田瑛理が質疑",
+   "url": "https://note.com/team_mirai_log/n/n0d3dc448ed78",
+   "kind": "国会",
+   "members": [
+    "yamada"
+   ],
+   "committee": "衆議院 安全保障委員会"
+  },
+  {
+   "date": "2026-04-09",
+   "title": "衆議院内閣委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/ne9f2fb239a45",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 内閣委員会"
+  },
+  {
+   "date": "2026-04-09",
+   "title": "衆議院本会議にて古川あおいが「健康保険法等の一部を改正する法律案」に対する質疑",
+   "url": "https://note.com/team_mirai_log/n/n6b3513e2798b",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-04-03",
+   "title": "YouTube「4月1週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=LCaGQWqito4",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-03",
+   "title": "チームみらい党首会見を実施",
+   "url": "https://note.com/team_mirai_jp/n/nf09500786546",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-04-02",
+   "title": "参議院総務委員会にて安野貴博が「在外選挙インターネット投票の実現に向けた具体的工程」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n2540436f3e1a",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-04-01",
+   "title": "参議院特別委員会にて安野貴博が「プッシュ型給付の実現に向けた課題・ガバメントAI『源内』の全府省庁展開」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n60746de44226",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 特別委員会"
+  },
+  {
+   "date": "2026-03-31",
+   "title": "参議院総務委員会にて安野貴博が質疑",
+   "url": "https://note.com/team_mirai_log/n/na7a74f3ca76d",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-03-30",
+   "title": "衆議院予算委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/nb427756e8c7f",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-03-27",
+   "title": "YouTube「3月4週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=j_sfN28qWJs",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-26",
+   "title": "衆議院本会議にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/nc9d2ff69091f",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-26",
+   "title": "参議院総務委員会にて安野貴博が「地方税・地方交付税」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n6f6030a1ff19",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-03-24",
+   "title": "参議院総務委員会にて安野貴博が「人口減少下におけるテクノロジーの活用・ふるさと住民アプリ」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nf6ba4d5e252d",
+   "kind": "国会",
+   "members": [
+    "anno"
+   ],
+   "committee": "参議院 総務委員会"
+  },
+  {
+   "date": "2026-03-20",
+   "title": "YouTube「3月3週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=dR_zYXlnucs",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-13",
+   "title": "YouTube「3月2週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=riPQ5HQSXF4",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-13",
+   "title": "衆議院本会議にて峰島侑也が「所得税法等の一部を改正する法律案」について討論",
+   "url": "https://note.com/team_mirai_jp/n/n9477302437c4",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-13",
+   "title": "衆議院本会議にて高山聡史が令和8年度総予算について討論",
+   "url": "https://note.com/team_mirai_jp/n/nf57cfb69b122",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-13",
+   "title": "衆議院財務金融委員会にて古川あおいが「所得税法等の一部を改正する法律案」について討論",
+   "url": "https://note.com/team_mirai_log/n/n90db19564966",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-03-13",
+   "title": "衆議院予算委員会にて高山聡史が締めくくり質疑",
+   "url": "https://note.com/team_mirai_jp/n/n0a4c47063221",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-03-13",
+   "title": "衆議院本会議にて高山聡史が予算委員長解任決議案について討論",
+   "url": "https://note.com/team_mirai_jp/n/n05692bf0c7f0",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-12",
+   "title": "衆議院災害対策特別委員会にて須田英太郎が「新総合防災情報システム（SOBO-WEB）・災害対応基本共有情報（EEI）の導入促進」について質疑",
+   "url": "https://note.com/team_mirai_log/n/nd765abb2e598",
+   "kind": "国会",
+   "members": [
+    "suda"
+   ],
+   "committee": "衆議院 災害対策特別委員会"
+  },
+  {
+   "date": "2026-03-12",
+   "title": "衆議院予算委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_log/n/nf072f2538742",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-03-12",
+   "title": "衆議院総務委員会にて武藤かず子が質疑",
+   "url": "https://note.com/team_mirai_log/n/n135b33b970ba",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": "衆議院 総務委員会"
+  },
+  {
+   "date": "2026-03-12",
+   "title": "衆議院農林水産委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/n3d9790c54d9a",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 農林水産委員会"
+  },
+  {
+   "date": "2026-03-11",
+   "title": "衆議院予算委員会にて古川あおいが「検索AIサマリーによる災害時の誤情報・学生の進学や修学環境の整備」について質疑",
+   "url": "https://note.com/team_mirai_log/n/ne5f101705dff",
+   "kind": "国会",
+   "members": [
+    "furukawa"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-03-11",
+   "title": "衆議院外務委員会にて宇佐美登が質疑",
+   "url": "https://note.com/team_mirai_log/n/n7eb6504c6d4f",
+   "kind": "国会",
+   "members": [
+    "usami"
+   ],
+   "committee": "衆議院 外務委員会"
+  },
+  {
+   "date": "2026-03-11",
+   "title": "衆議院文部科学委員会にて河合道雄が質疑",
+   "url": "https://note.com/team_mirai_log/n/n95527ab648b0",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 文部科学委員会"
+  },
+  {
+   "date": "2026-03-11",
+   "title": "東日本大震災の発生から15年を迎えて",
+   "url": "/news/20260311",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-10",
+   "title": "衆議院文部科学委員会にて河合道雄が「高等学校等就学支援金の支給に関する法律の一部を改正する法律案」について質疑",
+   "url": "https://note.com/team_mirai_log/n/n528267be0897",
+   "kind": "国会",
+   "members": [
+    "kawai"
+   ],
+   "committee": "衆議院 文部科学委員会"
+  },
+  {
+   "date": "2026-03-10",
+   "title": "衆議院財務金融委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_log/n/n5b588c53ce6b",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 財務金融委員会"
+  },
+  {
+   "date": "2026-03-10",
+   "title": "衆議院総務委員会にて武藤かず子が質疑",
+   "url": "https://note.com/team_mirai_log/n/n9d0327e3cd22",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": "衆議院 総務委員会"
+  },
+  {
+   "date": "2026-03-06",
+   "title": "YouTube「3月1週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=JVW7GkqWL1Q",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-05",
+   "title": "衆議院本会議にて武藤かず子が「ふるさと納税制度の見直し・納税証明書等のデジタル化」について質疑",
+   "url": "https://note.com/team_mirai_jp/n/n0f0084159227",
+   "kind": "国会",
+   "members": [
+    "muto"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-05",
+   "title": "衆議院本会議にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_jp/n/nf9416bc70a71",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-03-05",
+   "title": "定例党首会見を開催",
+   "url": "https://note.com/team_mirai_jp/n/nc1c10734dccc",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-03-03",
+   "title": "衆議院予算委員会にて峰島侑也が質疑",
+   "url": "https://note.com/team_mirai_jp/n/na57fe163978f",
+   "kind": "国会",
+   "members": [
+    "mineshima"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-03-02",
+   "title": "衆議院予算委員会にて高山聡史が質疑",
+   "url": "https://note.com/team_mirai_jp/n/n7efd2ac76df6",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 予算委員会"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "YouTube「2月4週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=LzcDX1QSP7A",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-02-27",
+   "title": "SNS上のご意見及び事実に基づかない情報・誹謗中傷について",
+   "url": "https://note.com/team_mirai_jp/n/n39d055474660",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-02-27",
+   "title": "定例党首会見を開催",
+   "url": "https://note.com/team_mirai_jp/n/n07f04b5480bb",
+   "kind": "会見",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-02-25",
+   "title": "衆議院本会議にて高山聡史が代表質問",
+   "url": "https://note.com/team_mirai_jp/n/ncfa27257b399",
+   "kind": "国会",
+   "members": [
+    "takayama"
+   ],
+   "committee": "衆議院 本会議"
+  },
+  {
+   "date": "2026-02-20",
+   "title": "YouTube「2月3週目週次報告」",
+   "url": "https://www.youtube.com/watch?v=cZEJHdQabwM",
+   "kind": "動画・配信",
+   "members": [],
+   "committee": null
+  },
+  {
+   "date": "2026-02-18",
+   "title": "衆議院議員11名が初登院",
+   "url": "https://x.com/team_mirai_jp/status/2024103707781345452",
+   "kind": "お知らせ",
+   "members": [],
+   "committee": null
+  }
+ ]
+}

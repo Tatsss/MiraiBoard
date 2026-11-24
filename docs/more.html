@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>理念・プロダクト・求人・出典 — MiraiBoard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">Mission</div>
+  <p class="mission" id="mission"></p>
+  <div class="vals" id="vals"></div>
+  <div class="cards" id="vision" style="margin-top:14px"></div>
+  <div class="src" id="mvv-src"></div>
+</div></section>
+
+<section class="blk alt" id="products"><div class="w">
+  <div class="bh"><div class="k">Products</div><div><h2>党が作っているもの</h2><p id="pnote"></p></div></div>
+  <div class="cards" id="pgrid"></div>
+  <div class="lbl" style="margin-top:36px">発信チャンネル</div><div class="links" id="ch"></div>
+</div></section>
+
+<section class="blk" id="meetings"><div class="w">
+  <div class="bh"><div class="k">Meetings</div><div><h2>会議の記録</h2><p id="mhow"></p></div></div>
+  <div class="scroll"><table class="tbl" id="mt"></table></div>
+</div></section>
+
+<section class="blk alt" id="jobs"><div class="w">
+  <div class="bh"><div class="k">Hiring</div><div><h2>党がいま募集している仕事</h2><p id="jnote"></p></div></div>
+  <div id="feat"></div>
+  <div style="margin-top:24px" id="jl"></div>
+</div></section>
+
+<section class="blk" id="sources"><div class="w">
+  <div class="bh"><div class="k">Sources</div><div><h2>出典と作り方</h2><p>この台帳は、下の公開情報だけで作っています。数字や状態は確認した日の時点のものです。最新は各出典で確かめてください。見えるのは表に出た動きだけで、党内の作業や議員事務所の実務はほとんど見えません。</p></div></div>
+  <ul id="srcs" style="columns:2;column-gap:28px;font-size:13px;padding-left:18px"></ul>
+</div></section>
+</main>
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('more.html');
+const party = MB.party;
+$('#mission').innerHTML = party.mission.map(esc).join('<br>');
+$('#vals').innerHTML = party.values.map(v => `<div><b>${esc(v.title)}</b><span>${esc(v.point)}</span></div>`).join('');
+$('#vision').innerHTML = party.vision.map(v => `<div class="card"><span class="chip b">Vision</span><h3>${esc(v.title)}</h3><p>${esc(v.point)}</p></div>`).join('');
+$('#mvv-src').innerHTML = srcHtml(party.mvv_source);
+$('#pnote').textContent = MB.products.note;
+$('#pgrid').innerHTML = MB.products.products.map(p => `<div class="card"><span class="chip">${esc(p.status)}</span><h3>${esc(p.name)}</h3><p>${esc(p.what)}</p><div class="links" style="margin-top:12px">${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">サイト</a>` : ''}${p.repo ? `<a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">GitHub</a>` : ''}</div><div class="src">${srcHtml(p.source)}</div></div>`).join('');
+$('#ch').innerHTML = MB.channels.channels.map(c => `<a href="${esc(c.url)}" target="_blank" rel="noopener" title="${esc(c.what || '')}">${esc(c.kind)}・${esc(c.name)}</a>`).join('');
+$('#mhow').textContent = MB.meetings.how_to;
+const mt = MB.meetings.meetings || [];
+$('#mt').innerHTML = `<tr><th>日付</th><th>会議</th><th>決まったこと・決まらなかったこと</th></tr>` + (mt.map(x => `<tr><td class="small muted">${esc(x.date)}</td><td>${ext(x.url, x.title)}</td><td>${esc(x.summary)}</td></tr>`).join('') || `<tr><td colspan="3" class="muted">まだありません。</td></tr>`);
+/* 求人 */
+const J = MB.jobs, f = J.jobs[0];
+$('#jnote').textContent = J.note;
+const go = t => { const A = [['ボトルネック', [['flow.html', '政策づくりの現場'], ['flow.html#watch', '注意・未着手の目標']]], ['ツール', [['more.html#products', 'プロダクト'], ['flow.html', '段階ごとの道具と課題']]], ['広聴データ', [['index.html', '声が政策になるまで'], ['flow.html#listen', '聴く'], ['flow.html#refine', '磨く']]], ['プロトタイピング', [['people.html', '議員室の目標'], ['org.html', '本部の目標']]]].find(([k]) => t.includes(k)); return A ? `<div class="go">${A[1].map(([h, l]) => `<a href="${h}">${esc(l)} →</a>`).join('')}</div>` : ''; };
+$('#feat').innerHTML = `<div class="jobhero"><div><span class="chip b">${esc(f.department)}</span><h3 style="font-size:24px;margin:10px 0">${esc(f.title)}</h3><p class="ink2" style="margin:0 0 14px">${esc(f.overview[0] || '')}</p><ol class="duty">${f.overview.filter(x => x.startsWith('・')).map(x => `<li>${esc(x.slice(1))}${go(x)}</li>`).join('')}</ol><div class="src">${srcHtml({ name: 'チームみらい 求人ページ（HERP）', url: f.url, checked: f.checked })}</div></div>
+<div><div class="lbl" style="margin-top:0">必須スキル（見出し）</div><ul class="small ink2" style="padding-left:18px;margin:0">${f.must.map(x => `<li>${esc(x)}</li>`).join('')}</ul><div class="lbl">歓迎スキル</div><ul class="small ink2" style="padding-left:18px;margin:0">${f.welcome.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
+$('#jl').innerHTML = J.jobs.slice(1).map(j => `<details class="job"><summary><span>${esc(j.title)}</span><span class="chip">${esc(j.department)}</span></summary><div class="b">${j.overview.map(x => `<div>${esc(x)}</div>`).join('')}<div style="margin-top:8px">${ext(j.url, '求人ページを開く')}</div></div></details>`).join('');
+/* 出典をすべて集める */
+const S = new Map(); const add = s => { if (s && s.url && !S.has(s.url)) S.set(s.url, s); };
+add(party.summary_source); add(party.numbers.source); add(party.mvv_source); add(party.cycle.source); add(party.member_role_policy.source); add(OKR_SRC); add(MB.news.source); add(MB.process.intro_source);
+MB.process.stages.forEach(s => (s.facts || []).forEach(f => add(f.source)));
+MB.timeline.events.forEach(e => add(e.source)); MB.products.products.forEach(p => add(p.source)); MB.channels.channels.forEach(c => add(c.source));
+MB.members.members.forEach(m => m.sources.forEach(add)); add({ name: 'チームみらい 求人ページ（HERP）', url: 'https://herp.careers/v1/teammirai', checked: '2026-11-21' });
+$('#srcs').innerHTML = [...S.values()].map(s => `<li style="margin-bottom:6px">${ext(s.url, s.name)}${s.checked ? ` <span class="muted">（${esc(s.checked)} 確認）</span>` : ''}</li>`).join('');
+</script>
+</body></html>

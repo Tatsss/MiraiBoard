@@ -16,4 +16,4 @@
 
 ## 更新の手順
 
-README.md の「更新のしかた」に従う。データを直したら `python3 scripts/build.py` で `docs/index.html` を作り直してからコミットする。
+README.md の「更新のしかた」に従う。ページを直すときは `site/` を編集する（`docs/` は build.py が作るので直接は編集しない）。データやページを直したら `python3 scripts/build.py` で `docs/` を作り直してからコミットする。

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>年表 — MiraiBoard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">Timeline</div>
+  <h1>都知事選から、<span class="g">いま</span>まで。</h1>
+  <p class="lead">2024年の都知事選で集まった「チーム安野」から、結党、参院選、衆院選、そして現在まで。上が大きな節目、下が公式サイトのお知らせの全件です。</p>
+</div></section>
+
+<section class="blk" style="border-top:0;padding-top:0"><div class="w">
+  <div class="scroll"><div class="track" id="track" style="min-width:760px"></div></div>
+  <div class="mil" id="mil"></div>
+</div></section>
+
+<section class="blk alt"><div class="w">
+  <div class="bh"><div class="k">All news</div><div><h2>お知らせ（全件）</h2><p id="feed-lead"></p></div></div>
+  <div class="toolbar"><div class="seg" id="fk"></div><select class="search" id="fm" style="flex:0 0 220px"></select></div>
+  <div id="months"></div>
+  <div class="src" id="feed-src"></div>
+</div></section>
+</main>
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('timeline.html');
+const T = MB.timeline.events, N = MB.news.items, M = MB.members.members;
+/* 節目を時間軸に並べる（2024年〜） */
+const t0 = Date.parse('2024-06-01'), t1 = Date.parse('2026-12-31');
+const pos = d => { const s = String(d); const t = Date.parse(s.length === 4 ? s + '-07-01' : s.length === 7 ? s + '-15' : s); return (t - t0) / (t1 - t0) * 100; };
+const keys = T.filter(e => /都知事選|設立|結党|参議院選挙|衆議院選挙|初登院|党大会|新体制|まる見え」宣言/.test(e.event));
+$('#track').innerHTML = `<div class="axis"></div>` + ['2025', '2026'].map(y => `<div class="yr" style="left:${pos(y + '-01-01')}%">${y}</div>`).join('') +
+  keys.map(e => `<div class="pt" style="left:${Math.min(98, Math.max(2, pos(e.date)))}%" data-tip="${esc(`<b>${e.date}</b>${e.event}`)}"><i></i></div>`).join('');
+$('#mil').innerHTML = T.map(e => `<div class="m"><div class="d">${esc(e.date)}</div><div class="e">${esc(e.event)}</div>${e.note ? `<div class="small muted">${esc(e.note)}</div>` : ''}<div class="src" style="margin-top:6px">${srcHtml(e.source)}</div></div>`).join('');
+/* お知らせ全件（種類・議員で絞る） */
+const kinds = ['すべて', ...new Set(N.map(n => n.kind))];
+let k = 'すべて', mid = new URLSearchParams(location.search).get('m') || '';
+$('#fk').innerHTML = kinds.map(v => `<button class="${v === k ? 'on' : ''}" data-v="${esc(v)}">${esc(v)}</button>`).join('');
+$('#fm').innerHTML = `<option value="">議員: すべて</option>` + M.map(m => `<option value="${esc(m.id)}" ${m.id === mid ? 'selected' : ''}>${esc(m.name)}</option>`).join('');
+$('#fk').onclick = e => { const b = e.target.closest('button'); if (!b) return; k = b.dataset.v; $$('#fk button').forEach(x => x.classList.toggle('on', x === b)); draw(); };
+$('#fm').onchange = e => { mid = e.target.value; draw(); };
+function draw() {
+  const L = N.filter(n => (k === 'すべて' || n.kind === k) && (!mid || n.members.includes(mid)));
+  const by = {}; L.forEach(n => (by[n.date.slice(0, 7)] = by[n.date.slice(0, 7)] || []).push(n));
+  $('#months').innerHTML = Object.entries(by).map(([mo, xs]) => `<div style="display:grid;grid-template-columns:120px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)"><div style="font-weight:800;font-size:18px">${mo.replace('-', '年')}月<div class="small muted" style="font-weight:400">${xs.length}件</div></div><ul class="feed" style="margin-top:-8px">${xs.map(n => `<li style="border-top:0"><span class="d">${esc(n.date.slice(5))}</span><span>${ext(n.url, n.title)} <span class="chip" style="margin-left:4px">${esc(n.kind)}</span></span></li>`).join('')}</ul></div>`).join('') || '<p class="muted">該当なし</p>';
+  $('#feed-lead').textContent = `公式サイトのお知らせ一覧に載っている${N.length}件（${N[N.length - 1].date}〜${N[0].date}）。種類と議員で絞り込めます。`;
+}
+draw(); $('#feed-src').innerHTML = srcHtml(MB.news.source);
+</script>
+</body></html>
