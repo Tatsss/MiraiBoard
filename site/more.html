@@ -22,8 +22,8 @@
 </div></section>
 
 <section class="blk" id="meetings"><div class="w">
-  <div class="bh"><div class="k">Meetings</div><div><h2>会議の記録</h2><p id="mhow"></p></div></div>
-  <div class="scroll"><table class="tbl" id="mt"></table></div>
+  <div class="bh"><div class="k">Watch &amp; read</div><div><h2>動画・記事の要点</h2><p id="mhow"></p></div></div>
+  <div id="mt"></div>
 </div></section>
 
 <section class="blk alt" id="jobs"><div class="w">
@@ -50,7 +50,7 @@ $('#pgrid').innerHTML = MB.products.products.map(p => `<div class="card"><span c
 $('#ch').innerHTML = MB.channels.channels.map(c => `<a href="${esc(c.url)}" target="_blank" rel="noopener" title="${esc(c.what || '')}">${esc(c.kind)}・${esc(c.name)}</a>`).join('');
 $('#mhow').textContent = MB.meetings.how_to;
 const mt = MB.meetings.meetings || [];
-$('#mt').innerHTML = `<tr><th>日付</th><th>会議</th><th>決まったこと・決まらなかったこと</th></tr>` + (mt.map(x => `<tr><td class="small muted">${esc(x.date)}</td><td>${ext(x.url, x.title)}</td><td>${esc(x.summary)}</td></tr>`).join('') || `<tr><td colspan="3" class="muted">まだありません。</td></tr>`);
+$('#mt').innerHTML = mt.map(x => `<article class="stage" style="grid-template-columns:150px 1fr"><div><div class="chip">${esc(x.kind)}</div><div class="small muted" style="margin-top:8px">${esc(x.date)}</div></div><div><h3 style="font-size:20px">${x.url ? ext(x.url, x.title) : esc(x.title)}</h3><div class="kv">${(x.people || []).map(p => `<span class="chip b">${esc(p)}</span>`).join('')}</div><ul class="facts">${(x.points || []).map(t => `<li>${esc(t)}</li>`).join('')}</ul><div class="src">${srcHtml(x.source)}</div></div></article>`).join('') || '<p class="muted">まだありません。</p>';
 /* 求人 */
 const J = MB.jobs, f = J.jobs[0];
 $('#jnote').textContent = J.note;
@@ -62,7 +62,7 @@ $('#jl').innerHTML = J.jobs.slice(1).map(j => `<details class="job"><summary><sp
 const S = new Map(); const add = s => { if (s && s.url && !S.has(s.url)) S.set(s.url, s); };
 add(party.summary_source); add(party.numbers.source); add(party.mvv_source); add(party.cycle.source); add(party.member_role_policy.source); add(OKR_SRC); add(MB.news.source); add(MB.process.intro_source);
 MB.process.stages.forEach(s => (s.facts || []).forEach(f => add(f.source)));
-MB.timeline.events.forEach(e => add(e.source)); MB.products.products.forEach(p => add(p.source)); MB.channels.channels.forEach(c => add(c.source));
+MB.timeline.events.forEach(e => add(e.source)); (MB.meetings.meetings || []).forEach(x => add(x.source)); (MB.party.leaders?.items || []).forEach(l => add(l.source)); MB.products.products.forEach(p => add(p.source)); MB.channels.channels.forEach(c => add(c.source));
 MB.members.members.forEach(m => m.sources.forEach(add)); add({ name: 'チームみらい 求人ページ（HERP）', url: 'https://herp.careers/v1/teammirai', checked: '2026-11-21' });
 $('#srcs').innerHTML = [...S.values()].map(s => `<li style="margin-bottom:6px">${ext(s.url, s.name)}${s.checked ? ` <span class="muted">（${esc(s.checked)} 確認）</span>` : ''}</li>`).join('');
 </script>

@@ -62,6 +62,7 @@ $('#stages').innerHTML = `<div class="bh" style="margin-bottom:0"><div class="k"
       <div class="kv">${s.officer ? `<span class="chip b">執行役員 ${esc(s.officer)}</span>` : ''}${(s.units || []).map(u => `<span class="chip">${esc(u)}</span>`).join('')}</div>
       ${(s.tools || []).length ? `<div class="lbl">使っている道具</div><div class="kv">${s.tools.map(t => `<span class="chip">${esc(t)}</span>`).join('')}</div>` : ''}
       ${(s.facts || []).length ? `<div class="lbl">分かっていること</div><ul class="facts">${s.facts.map(f => `<li>${esc(f.text)}<div class="src" style="margin-top:2px">${srcHtml(f.source)}</div></li>`).join('')}</ul>` : ''}
+      ${(s.stated_challenges || []).length ? `<div class="lbl">党自身が動画や記事で語っていること</div><ul class="facts">${s.stated_challenges.map(f => `<li>${esc(f.text)}<div class="src" style="margin-top:2px">${srcHtml(f.source)}</div></li>`).join('')}</ul>` : ''}
       <div class="lbl">公開情報では見えないこと</div>${(s.unknown || []).map(u => `<div class="blind">${esc(u)}</div>`).join('')}
     </div>
     <div><div class="lbl" style="margin-top:0">目標と進み具合</div>${krs.map(id => { const k = KR[id]; const r = ratio(k.progress);

@@ -18,6 +18,11 @@
   <div class="src" id="org-src"></div>
 </div></section>
 
+<section class="blk"><div class="w">
+  <div class="bh"><div class="k">Who leads what</div><div><h2>役職と、国対・政調の役割</h2><p>党の役職として公表されている人と、国会対策委員会・政務調査会がそれぞれ何をする組織か。</p></div></div>
+  <div class="ringwrap" style="align-items:start;gap:28px"><div class="scroll"><table class="tbl" id="leaders"></table></div><div id="roles"></div></div>
+</div></section>
+
 <section class="blk alt"><div class="w">
   <div class="bh"><div class="k">Party goals</div><div><h2>党全体の目標</h2><p>党全体の目標は、執行役員会の目標と同じです。各本部の目標は、ここにつながる形で立てられています。</p></div></div>
   <div class="cards" id="goals"></div>
@@ -56,6 +61,8 @@ function show(i) { cur = i; const h = OKR.hq[i]; $$('#tabs button').forEach(b =>
 $('#tabs').onclick = e => { const b = e.target.closest('button'); if (b) show(+b.dataset.i); };
 $('#org').onclick = e => { const b = e.target.closest('.unit'); if (!b || !b.dataset.hq) return; const i = OKR.hq.findIndex(h => h.id === b.dataset.hq); if (i >= 0) { show(i); $('#tabs').scrollIntoView({ behavior: 'smooth', block: 'center' }); } };
 show(0);
+$('#leaders').innerHTML = `<tr><th>役職</th><th>名前</th><th>出典</th></tr>` + party.leaders.items.map(l => { const m = people[l.name]; return `<tr><td style="white-space:nowrap">${esc(l.role)}</td><td style="font-weight:700;white-space:nowrap">${m ? `<a class="u" href="people.html#${esc(m.id)}">${esc(l.name)}</a>` : esc(l.name)}</td><td class="small muted">${srcHtml(l.source)}</td></tr>`; }).join('');
+$('#roles').innerHTML = party.roles_explained.items.map((r, i) => `<div style="display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)"><div style="font-family:var(--serif);font-size:28px;color:var(--ink-3)">${i === 2 ? '⇄' : '0' + (i + 1)}</div><div><div style="font-weight:800;font-size:17px">${esc(r.unit)}</div><div class="ink2" style="font-size:14px">${esc(r.what)}</div></div></div>`).join('') + `<div class="src">${srcHtml(party.roles_explained.source)}</div>`;
 $('#policy').textContent = party.member_role_policy.summary; $('#policy-src').innerHTML = srcHtml(party.member_role_policy.source);
 </script>
 </body></html>

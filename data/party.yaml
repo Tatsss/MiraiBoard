@@ -74,3 +74,72 @@ member_role_policy:
     name: チームみらい OKR（議員に期待する役割）
     url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/_meta.yml
     checked: '2026-11-24'
+leaders:
+  note: 党の役職として公表されている人だけ。出典はそれぞれの行
+  items:
+  - role: 党首
+    name: 安野貴博
+    source:
+      name: チームみらい公式サイト 私たちについて
+      url: https://team-mir.ai/about
+      checked: '2026-11-24'
+  - role: 幹事長・議員本部長
+    name: 古川あおい
+    source:
+      name: 公式サイトの国会議員プロフィール／公開OKR
+      url: https://team-mir.ai/member/shugiin/aoi-furukawa
+      checked: '2026-11-24'
+  - role: 政務調査会長
+    name: 河合道雄
+    source:
+      name: 公式サイトの国会議員プロフィール
+      url: https://team-mir.ai/member/shugiin/michio-kawai
+      checked: '2026-11-24'
+  - role: 国会対策委員長
+    name: 高山聡史
+    source:
+      name: 公式サイトの国会議員プロフィール
+      url: https://team-mir.ai/member/shugiin/satoshi-takayama
+      checked: '2026-11-24'
+  - role: 国会対策委員長代理
+    name: 武藤かず子
+    source:
+      name: 公開OKR（議員室）
+      url: https://github.com/team-mirai/okr-content/tree/main/2026/q4/giinshitsu/muto
+      checked: '2026-11-24'
+  - role: 広報本部長
+    name: 峰島侑也
+    source:
+      name: 公式サイトの国会議員プロフィール
+      url: https://team-mir.ai/member/shugiin/yuya-mineshima
+      checked: '2026-11-24'
+  - role: 組織活動本部長
+    name: 須田英太郎
+    source:
+      name: 公式サイトの国会議員プロフィール
+      url: https://team-mir.ai/member/shugiin/eitaro-suda
+      checked: '2026-11-24'
+  - role: 広聴本部長
+    name: 加藤直樹
+    source:
+      name: YouTube「【新設】はじめまして！広聴本部です｜AIインタビュー実演と「Plan C」の生まれ方、目指す新しい民主主義の形」（2026-10-06。文字起こしで確認）
+      url: https://youtu.be/4ytOt_jDn7A
+      checked: '2026-11-25'
+  - role: 執行役員（聴く）
+    name: 村井謙太
+    source:
+      name: チームみらいTIMES 10月号
+      url: https://team-mir.ai/times/vol01.html
+      checked: '2026-11-21'
+roles_explained:
+  source:
+    name: YouTube「【本人解説】国会対策委員会と政務調査会の役割とは？【チームみらい】」（公開日・URLは未確認。文字起こしで確認）
+    url: null
+    checked: '2026-11-25'
+  items:
+  - unit: 国会対策委員会
+    what: 国会でどの議案を、いつ、どの委員会で、どの順番で話すかを、各党と事前に話し合って段取りをつける。党の主張が通るよう他党と連携・交渉する
+  - unit: 政務調査会
+    what: 政策をリードする。マニフェストをもとに政策を考え直し、他党や政府の法案に賛成か反対か、その理由も含めて党のスタンスを決める
+  - unit: 2つの関係
+    what: 国会対策委員会に入る国会の日程や議題の情報をもとに、政務調査会と一緒に賛否・理由・発言を考える。強い連携が要る
