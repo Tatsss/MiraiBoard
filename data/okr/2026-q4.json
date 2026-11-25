@@ -1,6 +1,6 @@
 {
  "period": "2026-q4",
- "updated_at": "2026-11-18",
+ "updated_at": "2026-11-20",
  "source": {
   "name": "チームみらい OKR（公開データ）",
   "url": "https://github.com/team-mirai/okr-content/tree/main/2026/q4",
@@ -79,14 +79,14 @@
       {
        "id": "kocho-o1-kr2",
        "summary": "集めた声の結果と示唆を、20件の政策論点で政調に渡す",
-       "status": "注意",
-       "progress": "5/20件"
+       "status": "順調",
+       "progress": "17/20件"
       },
       {
        "id": "kocho-o1-kr3",
        "summary": "5件の政策について、聴くから公表までサイクルを回しきる",
        "status": "順調",
-       "progress": "3/5件"
+       "progress": "4/5件"
       }
      ]
     },
@@ -100,13 +100,13 @@
        "id": "kocho-o2-kr1",
        "summary": "党内の論点10件について、声を集めて検討を支援する",
        "status": "順調",
-       "progress": "4/10件"
+       "progress": "8/10件"
       },
       {
        "id": "kocho-o2-kr3",
        "summary": "広聴によって納得感が高まったと、定量的に評価できる論点を2件つくる",
-       "status": "未着手",
-       "progress": "未着手/2件"
+       "status": "注意",
+       "progress": "0/2件"
       }
      ]
     },
@@ -119,8 +119,8 @@
       {
        "id": "kocho-o3-kr1",
        "summary": "ツールで集めた声を、計10,000件公開する",
-       "status": "注意",
-       "progress": "8265/10000件"
+       "status": "順調",
+       "progress": "9535/10000件"
       },
       {
        "id": "kocho-o3-kr2",
@@ -190,8 +190,8 @@
       {
        "id": "seicho-o2-kr2-2",
        "summary": "臨時国会の全重要法案をデジタル民主主義で対応する",
-       "status": "注意",
-       "progress": "0/100%"
+       "status": "順調",
+       "progress": "40/100%"
       }
      ]
     },
@@ -233,13 +233,13 @@
        "id": "kokutai-o1-kr1-1",
        "summary": "法案修正・附帯決議・政府答弁の中で2件の要求を通す",
        "status": "順調",
-       "progress": "0/2件"
+       "progress": "1/2件"
       },
       {
        "id": "kokutai-o1-kr1-2",
        "summary": "他党と共同で議員立法を提出する",
-       "status": "未着手",
-       "progress": "未着手/1件"
+       "status": "順調",
+       "progress": "0/1件"
       },
       {
        "id": "kokutai-o1-kr1-3",
@@ -264,13 +264,13 @@
       {
        "id": "kokutai-o2-kr2-2",
        "summary": "重要案件3件で、チームみらいの考え方を発信する",
-       "status": "未着手",
-       "progress": "未着手/3件"
+       "status": "順調",
+       "progress": "1/3件"
       },
       {
        "id": "kokutai-o2-kr2-3",
        "summary": "国会での行動規範をAIインタビューで聴きながら磨く",
-       "status": "注意"
+       "status": "達成"
       }
      ]
     }
@@ -310,8 +310,8 @@
       {
        "id": "giin-o1-kr4",
        "summary": "党が議員に期待する役割と活動のあり方を公開する",
-       "status": "順調",
-       "progress": "0/1件"
+       "status": "達成",
+       "progress": "1/1件"
       }
      ]
     }
@@ -353,8 +353,8 @@
       {
        "id": "koho-o2-kr2-1",
        "summary": "デジタル民主主義を「説明できる」「関わり方のイメージが湧いている」サポーターの割合を、12月末までにそれぞれ10ポイント上げる",
-       "status": "未着手",
-       "progress": "未着手/10pt, 未着手/10pt"
+       "status": "順調",
+       "progress": "0/10pt, 0/10pt"
       },
       {
        "id": "koho-o2-kr2-2",
@@ -437,20 +437,20 @@
       {
        "id": "kaihatsu-o1-kr2",
        "summary": "政府予算を見える化し、それを元に委員会質疑を1回実施する",
-       "status": "注意",
+       "status": "順調",
        "progress": "0/1回"
       },
       {
        "id": "kaihatsu-o1-kr3",
        "summary": "政党トラッカーで党の約束1件の進捗を見える化",
-       "status": "順調",
-       "progress": "0/1件"
+       "status": "達成",
+       "progress": "1/1件"
       },
       {
        "id": "kaihatsu-o1-kr4",
        "summary": "全12議員室の調研費をまる見え政治資金に公開する",
        "status": "順調",
-       "progress": "1/12室"
+       "progress": "11/12室"
       }
      ]
     },
@@ -463,7 +463,7 @@
       {
        "id": "kaihatsu-o2-kr1",
        "summary": "賛同が集まった声に党が回答する場をテスト公開し、回答実績を作る",
-       "status": "順調"
+       "status": "注意"
       },
       {
        "id": "kaihatsu-o2-kr2",
@@ -487,7 +487,7 @@
       {
        "id": "kaihatsu-o3-kr1",
        "summary": "党内AIの満足度を保ちながら、コストを1/5に抑え、利用量を2倍に",
-       "status": "順調",
+       "status": "注意",
        "progress": "未着手/1/5, 未着手/2倍"
       },
       {
@@ -534,7 +534,7 @@
        "id": "soshiki-o2-kr2-1",
        "summary": "デジタル民主主義の場を10〜12月に20回開かれる",
        "status": "注意",
-       "progress": "6/20回, 0/300人, 0/15件"
+       "progress": "10/20回, 0/300人, 0/15件"
       },
       {
        "id": "soshiki-o2-kr2-2",
@@ -563,8 +563,8 @@
       {
        "id": "soshiki-o3-kr3-3",
        "summary": "組織活動のすべての場で、7日以内に結果共有と次回案内を実現",
-       "status": "未着手",
-       "progress": "未着手/90%"
+       "status": "順調",
+       "progress": "0/90%"
       }
      ]
     }
@@ -593,7 +593,7 @@
        "id": "jinji-o1-kr1-2",
        "summary": "本部長候補・専門人材のエントリーを、4Q中に10件以上集める",
        "status": "注意",
-       "progress": "3/10件"
+       "progress": "4/10件"
       }
      ]
     },
@@ -654,7 +654,7 @@
        "id": "jimu-o1-kr1",
        "summary": "支払い漏れをゼロにする",
        "status": "順調",
-       "progress": "0/0件"
+       "progress": "1/0件"
       },
       {
        "id": "jimu-o1-kr2",
@@ -1914,8 +1914,8 @@
   "kocho-o1-kr2": {
    "id": "kocho-o1-kr2",
    "summary": "集めた声の結果と示唆を、20件の政策論点で政調に渡す",
-   "status": "注意",
-   "progress": "5/20件",
+   "status": "順調",
+   "progress": "17/20件",
    "owner": "広聴本部",
    "owner_type": "hq",
    "owner_id": "kocho",
@@ -1925,7 +1925,7 @@
    "id": "kocho-o1-kr3",
    "summary": "5件の政策について、聴くから公表までサイクルを回しきる",
    "status": "順調",
-   "progress": "3/5件",
+   "progress": "4/5件",
    "owner": "広聴本部",
    "owner_type": "hq",
    "owner_id": "kocho",
@@ -1935,7 +1935,7 @@
    "id": "kocho-o2-kr1",
    "summary": "党内の論点10件について、声を集めて検討を支援する",
    "status": "順調",
-   "progress": "4/10件",
+   "progress": "8/10件",
    "owner": "広聴本部",
    "owner_type": "hq",
    "owner_id": "kocho",
@@ -1944,8 +1944,8 @@
   "kocho-o2-kr3": {
    "id": "kocho-o2-kr3",
    "summary": "広聴によって納得感が高まったと、定量的に評価できる論点を2件つくる",
-   "status": "未着手",
-   "progress": "未着手/2件",
+   "status": "注意",
+   "progress": "0/2件",
    "owner": "広聴本部",
    "owner_type": "hq",
    "owner_id": "kocho",
@@ -1954,8 +1954,8 @@
   "kocho-o3-kr1": {
    "id": "kocho-o3-kr1",
    "summary": "ツールで集めた声を、計10,000件公開する",
-   "status": "注意",
-   "progress": "8265/10000件",
+   "status": "順調",
+   "progress": "9535/10000件",
    "owner": "広聴本部",
    "owner_type": "hq",
    "owner_id": "kocho",
@@ -2032,8 +2032,8 @@
   "seicho-o2-kr2-2": {
    "id": "seicho-o2-kr2-2",
    "summary": "臨時国会の全重要法案をデジタル民主主義で対応する",
-   "status": "注意",
-   "progress": "0/100%",
+   "status": "順調",
+   "progress": "40/100%",
    "owner": "政務調査会",
    "owner_type": "hq",
    "owner_id": "seicho",
@@ -2062,7 +2062,7 @@
    "id": "kokutai-o1-kr1-1",
    "summary": "法案修正・附帯決議・政府答弁の中で2件の要求を通す",
    "status": "順調",
-   "progress": "0/2件",
+   "progress": "1/2件",
    "owner": "国会対策委員会",
    "owner_type": "hq",
    "owner_id": "kokutai",
@@ -2071,8 +2071,8 @@
   "kokutai-o1-kr1-2": {
    "id": "kokutai-o1-kr1-2",
    "summary": "他党と共同で議員立法を提出する",
-   "status": "未着手",
-   "progress": "未着手/1件",
+   "status": "順調",
+   "progress": "0/1件",
    "owner": "国会対策委員会",
    "owner_type": "hq",
    "owner_id": "kokutai",
@@ -2101,8 +2101,8 @@
   "kokutai-o2-kr2-2": {
    "id": "kokutai-o2-kr2-2",
    "summary": "重要案件3件で、チームみらいの考え方を発信する",
-   "status": "未着手",
-   "progress": "未着手/3件",
+   "status": "順調",
+   "progress": "1/3件",
    "owner": "国会対策委員会",
    "owner_type": "hq",
    "owner_id": "kokutai",
@@ -2111,7 +2111,7 @@
   "kokutai-o2-kr2-3": {
    "id": "kokutai-o2-kr2-3",
    "summary": "国会での行動規範をAIインタビューで聴きながら磨く",
-   "status": "注意",
+   "status": "達成",
    "owner": "国会対策委員会",
    "owner_type": "hq",
    "owner_id": "kokutai",
@@ -2150,8 +2150,8 @@
   "giin-o1-kr4": {
    "id": "giin-o1-kr4",
    "summary": "党が議員に期待する役割と活動のあり方を公開する",
-   "status": "順調",
-   "progress": "0/1件",
+   "status": "達成",
+   "progress": "1/1件",
    "owner": "議員本部",
    "owner_type": "hq",
    "owner_id": "giin",
@@ -2180,8 +2180,8 @@
   "koho-o2-kr2-1": {
    "id": "koho-o2-kr2-1",
    "summary": "デジタル民主主義を「説明できる」「関わり方のイメージが湧いている」サポーターの割合を、12月末までにそれぞれ10ポイント上げる",
-   "status": "未着手",
-   "progress": "未着手/10pt, 未着手/10pt",
+   "status": "順調",
+   "progress": "0/10pt, 0/10pt",
    "owner": "広報本部",
    "owner_type": "hq",
    "owner_id": "koho",
@@ -2267,7 +2267,7 @@
   "kaihatsu-o1-kr2": {
    "id": "kaihatsu-o1-kr2",
    "summary": "政府予算を見える化し、それを元に委員会質疑を1回実施する",
-   "status": "注意",
+   "status": "順調",
    "progress": "0/1回",
    "owner": "開発本部",
    "owner_type": "hq",
@@ -2277,8 +2277,8 @@
   "kaihatsu-o1-kr3": {
    "id": "kaihatsu-o1-kr3",
    "summary": "政党トラッカーで党の約束1件の進捗を見える化",
-   "status": "順調",
-   "progress": "0/1件",
+   "status": "達成",
+   "progress": "1/1件",
    "owner": "開発本部",
    "owner_type": "hq",
    "owner_id": "kaihatsu",
@@ -2288,7 +2288,7 @@
    "id": "kaihatsu-o1-kr4",
    "summary": "全12議員室の調研費をまる見え政治資金に公開する",
    "status": "順調",
-   "progress": "1/12室",
+   "progress": "11/12室",
    "owner": "開発本部",
    "owner_type": "hq",
    "owner_id": "kaihatsu",
@@ -2297,7 +2297,7 @@
   "kaihatsu-o2-kr1": {
    "id": "kaihatsu-o2-kr1",
    "summary": "賛同が集まった声に党が回答する場をテスト公開し、回答実績を作る",
-   "status": "順調",
+   "status": "注意",
    "owner": "開発本部",
    "owner_type": "hq",
    "owner_id": "kaihatsu",
@@ -2325,7 +2325,7 @@
   "kaihatsu-o3-kr1": {
    "id": "kaihatsu-o3-kr1",
    "summary": "党内AIの満足度を保ちながら、コストを1/5に抑え、利用量を2倍に",
-   "status": "順調",
+   "status": "注意",
    "progress": "未着手/1/5, 未着手/2倍",
    "owner": "開発本部",
    "owner_type": "hq",
@@ -2363,7 +2363,7 @@
    "id": "soshiki-o2-kr2-1",
    "summary": "デジタル民主主義の場を10〜12月に20回開かれる",
    "status": "注意",
-   "progress": "6/20回, 0/300人, 0/15件",
+   "progress": "10/20回, 0/300人, 0/15件",
    "owner": "組織活動本部",
    "owner_type": "hq",
    "owner_id": "soshiki",
@@ -2400,8 +2400,8 @@
   "soshiki-o3-kr3-3": {
    "id": "soshiki-o3-kr3-3",
    "summary": "組織活動のすべての場で、7日以内に結果共有と次回案内を実現",
-   "status": "未着手",
-   "progress": "未着手/90%",
+   "status": "順調",
+   "progress": "0/90%",
    "owner": "組織活動本部",
    "owner_type": "hq",
    "owner_id": "soshiki",
@@ -2421,7 +2421,7 @@
    "id": "jinji-o1-kr1-2",
    "summary": "本部長候補・専門人材のエントリーを、4Q中に10件以上集める",
    "status": "注意",
-   "progress": "3/10件",
+   "progress": "4/10件",
    "owner": "人事本部",
    "owner_type": "hq",
    "owner_id": "jinji",
@@ -2469,7 +2469,7 @@
    "id": "jimu-o1-kr1",
    "summary": "支払い漏れをゼロにする",
    "status": "順調",
-   "progress": "0/0件",
+   "progress": "1/0件",
    "owner": "事務本部",
    "owner_type": "hq",
    "owner_id": "jimu",

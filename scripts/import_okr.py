@@ -119,6 +119,13 @@ def main(src: str) -> None:
     }
     dest = ROOT / "data" / "okr" / f"{year.name}-{quarter.name}.json"
     dest.parent.mkdir(parents=True, exist_ok=True)
+    # 前回の取り込みを history/ に残す（目標一覧ページの「前回からの変化」に使う）
+    if dest.exists():
+        prev = json.loads(dest.read_text(encoding="utf-8"))
+        if str(prev.get("updated_at")) != out["updated_at"]:
+            hist = dest.parent / "history" / f"{dest.stem}_{prev.get('updated_at')}.json"
+            hist.parent.mkdir(parents=True, exist_ok=True)
+            hist.write_text(dest.read_text(encoding="utf-8"), encoding="utf-8")
     dest.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"{dest.relative_to(ROOT)}: 党 {len(party)}・本部 {len(hqs)}・議員室 {len(offices)}（OKR 更新日 {out['updated_at']}）")
 

@@ -37,6 +37,8 @@
 <section class="blk"><div class="w">
   <div class="bh"><div class="k">Explore</div><div><h2>もっと詳しく</h2></div></div>
   <div class="next">
+    <a href="start.html"><div class="t">触る・読む →</div><p>党のプロダクトを自分で触る。何のためにあり、入れた声がその後どうなるか。読む・見る順番</p></a>
+    <a href="okr.html"><div class="t">目標の一覧 →</div><p>公開OKRの全件を、担当・状態・ことばで絞り込む。前回の更新から動いた目標</p></a>
     <a href="flow.html"><div class="t">政策づくりの現場 →</div><p>段階ごとの担当、使っている道具、目標の進み具合、公開の場で挙がっている課題、見えていないこと</p></a>
     <a href="people.html"><div class="t">国会議員12人 →</div><p>顔ぶれ、役職、議員室の目標、国会での動き、発信</p></a>
     <a href="org.html"><div class="t">体制と目標 →</div><p>党首と4人の執行役員、11の本部、それぞれの目標</p></a>
@@ -97,6 +99,6 @@ $('#pipe').innerHTML = pp.nodes.map((n, i) => { const k = KR[n.kr] || {}; const 
   <h4>${esc(n.label)}</h4><p>${esc(n.note)}</p><div style="margin-top:8px">${st(k.status)}</div></div>`; }).join('');
 $('#pipe-side').innerHTML = pp.side.map(n => { const k = KR[n.kr] || {}; const r = ratio(k.progress);
   return `<div class="scard"><div class="t">${esc(n.label)}</div><div class="meter"><i style="width:${Math.min(100, (r || 0) * 100)}%"></i></div><div style="display:flex;justify-content:space-between;margin-top:8px;align-items:center"><span class="small muted">${esc(k.owner)}・${esc(k.progress || '—')}</span>${st(k.status)}</div></div>`; }).join('');
-$('#pipe-src').innerHTML = '数字は目標に対する実績（例: 5/20件 ＝ 目標20件のうち5件）。' + srcHtml(OKR_SRC);
+$('#pipe-src').innerHTML = '数字は目標に対する実績（例: 3/5件 ＝ 目標5件のうち3件）。' + srcHtml(OKR_SRC);
 </script>
 </body></html>

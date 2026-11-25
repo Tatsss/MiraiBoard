@@ -24,6 +24,24 @@ def y(name: str) -> dict:
     return yaml.safe_load((DATA / name).read_text(encoding="utf-8")) or {}
 
 
+def okr_changes(cur: dict, okr_file: Path) -> dict:
+    """同じ期の、ひとつ前の取り込み（data/okr/history/）と比べて、状態か進み具合が変わった KR を並べる。"""
+    hist = sorted((DATA / "okr" / "history").glob(f"{okr_file.stem}_*.json"))
+    hist = [h for h in hist if h.stem.split("_", 1)[1] < str(cur["updated_at"])]
+    if not hist:
+        return {"from": None, "to": cur["updated_at"], "items": []}
+    prev = json.loads(hist[-1].read_text(encoding="utf-8"))
+    items = []
+    for kid, k in cur["kr_index"].items():
+        p = prev["kr_index"].get(kid)
+        if p is None:
+            items.append({"id": kid, "new": True, "to_status": k.get("status"), "to_progress": k.get("progress")})
+        elif (p.get("status"), p.get("progress")) != (k.get("status"), k.get("progress")):
+            items.append({"id": kid, "from_status": p.get("status"), "from_progress": p.get("progress"),
+                          "to_status": k.get("status"), "to_progress": k.get("progress")})
+    return {"from": prev["updated_at"], "to": cur["updated_at"], "items": items}
+
+
 def main() -> None:
     okr_file = sorted((DATA / "okr").glob("*.json"))[-1]
     bundle = {
@@ -36,9 +54,11 @@ def main() -> None:
         "repos": y("repos.yaml"),
         "jobs": y("jobs.yaml"),
         "meetings": y("meetings.yaml"),
+        "guide": y("guide.yaml"),
         "okr": json.loads(okr_file.read_text(encoding="utf-8")),
         "news": json.loads((DATA / "news.json").read_text(encoding="utf-8")),
     }
+    bundle["okr_changes"] = okr_changes(bundle["okr"], okr_file)
     bundle["updated"] = max(str(v.get("updated", "")) for v in bundle.values() if isinstance(v, dict))
 
     if DOCS.exists():

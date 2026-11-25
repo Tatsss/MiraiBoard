@@ -1,0 +1,219 @@
+updated: '2026-11-25'
+intro: チームみらいを知るために、まず自分で触ってみるものと、読む・見るものを並べる。触るものには「何のためにあるか」と「入れた声やデータがその後どうなるか」を、公開情報から分かる範囲で添えた。
+
+# 触ってみる
+try:
+- name: AIインタビュー
+  url: https://interview.team-mir.ai/interview/policy-request
+  why: AIが聞き手になる匿名のインタビュー。法案や政策テーマごとに、立場を答えたあと、AIが理由や具体を深掘りする
+  do: 政策への意見や要望を1つ答えてみる（10分ほど）。法案ごとのインタビューは、みらい議会の法案ページから入れる
+  note: 回答は公開される。公開を望まない意見は、公式サイトのお問い合わせフォームから送るよう案内されている
+  then:
+  - 集まった声はAIが要約して論点ごとに整理し、人はそれを手がかりに一つひとつの声にも目を通す
+  - 広聴本部が、声を政策の議論にそのまま使えるところまで整理し、Plan C（対立する案のどちらでもない第3の案）のたたき台やヒントを政策チームに渡す
+  - 政策チーム（政務調査会）が専門的に検討して具体案に磨き、法案の賛否や提言に使う
+  krs: [kocho-o1-kr1, kocho-o1-kr2, kocho-o1-kr3, kocho-o3-kr1]
+  sources:
+  - name: チームみらい 公式サイト（お問い合わせ「政策に関するご意見」）
+    url: https://team-mir.ai/
+    checked: '2026-11-25'
+  - name: note「発足から2ヶ月 広聴本部に寄せられた『声』に答えます！」（2026-11-13）
+    url: https://note.com/team_mirai_jp/n/nab7280f54ae4
+    checked: '2026-11-25'
+  - name: YouTube「【新設】はじめまして！広聴本部です｜AIインタビュー実演と「Plan C」の生まれ方、目指す新しい民主主義の形」（2026-10-06。文字起こしで確認）
+    url: https://youtu.be/4ytOt_jDn7A
+    checked: '2026-11-25'
+- name: みらい議会
+  url: https://gikai.team-mir.ai
+  why: 国会でどんな法案が検討されているかを、分かりやすく確認できるツール
+  do: 気になる法案を1本開き、解説の難易度を切り替えて読む。チームみらいの賛否と根拠、党内会議の動画、AIチャットも見る
+  then:
+  - 党が想定している流れは「みらい議会に法案を公開 → AIインタビューで声を聴く → 声をもとに賛否と国会での質問を作る → みらい議会で理由とともに公開」
+  - 法案の賛否は、政務調査会長が案と理由を持ってきて執行役員会で議論し、政務調査会長が理由をまとめてみらい議会に載せる
+  krs: [seicho-o1-kr1-1, seicho-o2-kr2-2]
+  sources:
+  - name: チームみらい 公式サイト（Products）
+    url: https://team-mir.ai/
+    checked: '2026-11-25'
+  - name: チームみらい OKR 政務調査会 O2（KR2-2 の補足）
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/seicho/o2.yml
+    checked: '2026-11-24'
+  - name: YouTube まる見えチャンネル「執行役員会・法案賛否決定MTG 10月19日」（2026-10-19。文字起こしで確認）
+    url: null
+    checked: '2026-11-25'
+- name: みらい まる見え政治資金
+  url: https://marumie.team-mir.ai/o/team-mirai
+  why: 政治資金の流れを、誰でも分かりやすく確認できるツール。チームみらい以外の議員・政治団体も使える。クラウド会計ソフトの会計データから公開する
+  do: チームみらいの収入と支出の流れを図で見る。議員の調研費が領収書つきで公開されている所も見る
+  then:
+  - 党は、全12議員室の調研費をまる見え政治資金で公開することを目標にしている
+  krs: [kaihatsu-o1-kr4]
+  sources:
+  - name: チームみらい 公式サイト（Products）
+    url: https://team-mir.ai/
+    checked: '2026-11-25'
+  - name: GitHub team-mirai/marumie（README）
+    url: https://github.com/team-mirai/marumie
+    checked: '2026-11-25'
+- name: 政府予算ビュー
+  url: https://rs-vis.team-mir.ai
+  why: 行政事業レビューの予算・支出データを中心に、国の予算の流れ・事業の評価・委託の構造などを見える化する（β版）
+  do: サンキー図で、歳入から事業・支出先までの流れを1本たどる。ヘッダーの「AI」から、ことばで絞り込みや問い合わせができる
+  then:
+  - 党は、政府予算を見える化し、それをもとに委員会質疑を1回行うことを目標にしている
+  krs: [kaihatsu-o1-kr2]
+  sources:
+  - name: GitHub team-mirai-volunteer/rs-vis（README）
+    url: https://github.com/team-mirai-volunteer/rs-vis
+    checked: '2026-11-25'
+- name: 公開OKR
+  url: https://okr.team-mir.ai
+  why: 党全体・本部・議員室の目標と進み具合を公開している
+  do: 党全体の目標と、関心のある本部・議員室の目標を見る。このサイトの「目標の一覧」では全件を絞り込んで見られ、前回の更新からの変化も分かる
+  then:
+  - OKRは優先順位を示すもので、すべての仕事を網羅するものではない。期中に更新され、変更の履歴はGitHubで管理される
+  krs: []
+  sources:
+  - name: GitHub team-mirai/okr-content
+    url: https://github.com/team-mirai/okr-content
+    checked: '2026-11-25'
+- name: 政策（マニフェスト）
+  url: https://policy.team-mir.ai
+  why: 党の公約を、みんなでオープンに話し合ってよくしていくためのページ。熟議の仕組み（いどばたシステム）を使い、GitHub で論点（Issue）や改善提案（Pull request）を受け付けてきた
+  do: 関心のある分野を1つ読む
+  then:
+  - 2025年参院選版のリポジトリは、投票日後に更新を終えている（論点や改善提案は今後も参照するとしている）。2026年衆院選版の本文は別のリポジトリで管理している
+  krs: []
+  sources:
+  - name: GitHub team-mirai/policy（README）
+    url: https://github.com/team-mirai/policy
+    checked: '2026-11-25'
+  - name: GitHub team-mirai/manifesto-body（README）
+    url: https://github.com/team-mirai/manifesto-body
+    checked: '2026-11-25'
+- name: アクションボード
+  url: https://action.team-mir.ai/
+  why: サポーターが、数秒でできる簡単なミッションから党の活動を応援できる場所
+  do: どんなミッションが並んでいるかを見る
+  then: []
+  krs: []
+  sources:
+  - name: チームみらい 公式サイト（Join Us!）
+    url: https://team-mir.ai/
+    checked: '2026-11-25'
+
+# AIインタビューの声が形になった例
+examples:
+- title: 選挙中のSNSデマ対策
+  steps: ['145人の声', '9本の提案', '8本が国の指針案に反映']
+  note: 声を聴き始めて約1か月。反映されなかった提案と、必要と考える理由も公開
+  source: &kocho_note
+    name: note「発足から2ヶ月 広聴本部に寄せられた『声』に答えます！」（2026-11-13）
+    url: https://note.com/team_mirai_jp/n/nab7280f54ae4
+    checked: '2026-11-25'
+- title: AI時代のサイバー対策
+  steps: ['1,500人を超える声', '7項目の提言', '10月23日にデジタル大臣に手交']
+  note: 11月6日に政府が示した緊急対策パッケージに、提言と同じ方向の施策が入った
+  source: *kocho_note
+- title: AI失業対策
+  steps: ['米国・中国・フランスでの現地調査', 'AIインタビュー582人の声', '10月26日に提言を提出・公開']
+  note: 提出の日から、AIインタビューの第2弾で提言への意見を集めている
+  source:
+    name: YouTube 緊急配信「AI失業対策提言『AIの社会実装と仕事・雇用の変化への備えに向けた提言』について解説します」（2026-10-26。文字起こしで確認）
+    url: https://youtu.be/zWKFdgUyFL0
+    checked: '2026-11-25'
+
+# 党自身が挙げている、声の扱いの課題
+open_questions:
+- text: 届けた声の「その後」が見えない（いちばん多く寄せられた声）。声のゆくえを、配送状況のように追える形を目指している
+  source: *kocho_note
+- text: 答える人が支持者やデジタルに慣れた人に偏るのでは、という指摘がある
+  source: *kocho_note
+- text: 分析はまだ見本の段階で、仕組みは開発中と説明している
+  source:
+    name: YouTube「【新設】はじめまして！広聴本部です｜AIインタビュー実演と「Plan C」の生まれ方、目指す新しい民主主義の形」（2026-10-06。文字起こしで確認）
+    url: https://youtu.be/4ytOt_jDn7A
+    checked: '2026-11-25'
+
+# 読む・見る（上から順に）
+reading:
+- group: まず全体をつかむ
+  items:
+  - title: チームみらいについて
+    kind: note
+    url: https://note.com/team_mirai_jp/n/n140a362a5f86
+    why: 党が何者かを、党自身のことばで
+    checked: '2026-11-25'
+  - title: 月次まとめ 2026年10月
+    kind: 公式サイト
+    url: https://team-mir.ai/monthly/2026-10/recap.html
+    why: 1か月に何をしたかと、その数字
+    checked: '2026-11-21'
+  - title: チームみらいTIMES 10月号
+    kind: 公式サイト
+    url: https://team-mir.ai/times/vol01.html
+    why: 10月の主な出来事（提言の手交など）
+    checked: '2026-11-21'
+  - title: 公開OKR（このサイトの「目標の一覧」でも見られる）
+    kind: 公式サイト
+    url: https://okr.team-mir.ai
+    why: 党がいま何を優先しているか
+    checked: '2026-11-25'
+- group: 声が政策になるまで
+  items:
+  - title: 【新設】はじめまして！広聴本部です｜AIインタビュー実演と「Plan C」の生まれ方
+    kind: YouTube
+    url: https://youtu.be/4ytOt_jDn7A
+    why: AIインタビューの実演と、声を政策チームに渡す役割
+    meeting: '2026-10-06'
+    checked: '2026-11-25'
+  - title: 発足から2ヶ月 広聴本部に寄せられた『声』に答えます！
+    kind: note
+    url: https://note.com/team_mirai_jp/n/nab7280f54ae4
+    why: 声が形になった例と、党が自覚している課題
+    meeting: '2026-11-13'
+    checked: '2026-11-25'
+  - title: 緊急配信 AI失業対策提言の解説
+    kind: YouTube
+    url: https://youtu.be/zWKFdgUyFL0
+    why: 現地調査とAIインタビューから提言までの作り方
+    meeting: '2026-10-26'
+    checked: '2026-11-25'
+- group: 政策を決める現場
+  items:
+  - title: 【本人解説】国会対策委員会と政務調査会の役割とは？
+    kind: YouTube
+    url: null
+    why: 法案の賛否を誰がどう決めるか
+    meeting: 不明
+    checked: '2026-11-25'
+  - title: 執行役員会・法案賛否決定MTG 10月19日（まる見えチャンネル）
+    kind: YouTube
+    url: null
+    why: 賛否を決める会議そのもの
+    meeting: '2026-10-19'
+    checked: '2026-11-25'
+  - title: 【国会DX】処理能力10倍へ！目指す5つの国会の姿と道筋
+    kind: YouTube
+    url: https://youtu.be/s1TvO1hkQ3M
+    why: 国会の仕事の進め方をどう変えたいか
+    meeting: '2026-11-11'
+    checked: '2026-11-25'
+- group: 作る人たち
+  items:
+  - title: 永田町エンジニアチーム密着
+    kind: YouTube
+    url: https://youtu.be/0wXNPd3e3fE
+    why: 党のエンジニアがどう働き、何につまずいたか
+    meeting: '2026-09-12'
+    checked: '2026-11-25'
+  - title: AI勉強会の資料（議員・議員事務所向け）
+    kind: GitHub
+    url: https://github.com/team-mirai/vibe-coding-workshop
+    why: 議員や秘書にAIをどう教えているか
+    checked: '2026-11-25'
+  - title: みらい議会の Issue 一覧
+    kind: GitHub
+    url: https://github.com/team-mirai/mirai-gikai/issues
+    why: 公開の場で挙がっている課題と要望
+    checked: '2026-11-25'

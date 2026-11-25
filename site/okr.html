@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>目標の一覧 — MiraiBoard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">OKR</div>
+  <h1>党の<span class="g">目標</span>を、全部。</h1>
+  <p class="lead" id="lead"></p>
+</div></section>
+
+<section class="blk" style="border-top:0;padding-top:0"><div class="w">
+  <div class="kpis" id="kpis"></div>
+  <div class="lbl" style="margin-top:28px">OKRの読み方</div>
+  <ul class="small ink2" id="howto" style="margin:0;padding-left:18px"></ul>
+  <div class="src" id="howto-src"></div>
+</div></section>
+
+<section class="blk alt" id="party"><div class="w">
+  <div class="bh"><div class="k">Party</div><div><h2>党全体の目標</h2><p>本部と議員室の目標は、ここにつながる形で立てられています。</p></div></div>
+  <div class="cards" id="pg"></div>
+</div></section>
+
+<section class="blk" id="changes"><div class="w">
+  <div class="bh"><div class="k">What moved</div><div><h2>前回の更新から動いた目標</h2><p id="cnote"></p></div></div>
+  <div class="chg" id="cl"></div>
+  <div class="src" id="cl-src"></div>
+</div></section>
+
+<section class="blk alt" id="all"><div class="w">
+  <div class="bh"><div class="k">All key results</div><div><h2>すべての目標（KR）</h2><p>本部と議員室の目標を、担当・状態・ことばで絞り込めます。</p></div></div>
+  <div class="toolbar"><div class="seg" id="f-type"></div><select class="sel" id="f-owner" aria-label="担当"></select><div class="seg" id="f-st"></div><input class="search" id="f-q" placeholder="ことばで探す（例: AIインタビュー、法案）"></div>
+  <div class="scroll"><table class="tbl" id="kt"></table></div>
+  <div class="src" id="kt-src"></div>
+</div></section>
+</main>
+
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('okr.html');
+const CH = MB.okr_changes, ALL = Object.values(KR);
+$('#lead').textContent = `公開OKR（${OKR.period}）の目標を、党全体・本部・議員室まで一覧にしました。党の更新日は ${OKR.updated_at} です。`;
+
+/* 数 */
+const cnt = s => ALL.filter(k => k.status === s).length;
+$('#kpis').innerHTML = `<div><b>${ALL.length}</b><span>目標（KR）の数</span></div>` + ['達成', '順調', '注意', '未着手'].map(s => `<div><b>${cnt(s)}</b><span>${st(s)}</span></div>`).join('');
+
+/* 読み方 */
+$('#howto').innerHTML = ['O（Objective）は「何を目指すか」、KR（Key Result）は「達成をどう測るか」。数字は実績／目標（例: 3/5件）', '状態（達成・順調・注意・未着手）は、党が公開しているもの', ...OKR.notes].map(n => `<li>${esc(n)}</li>`).join('');
+$('#howto-src').innerHTML = srcHtml(OKR_SRC);
+
+/* 党全体 */
+$('#pg').innerHTML = OKR.party.map(p => `<div class="card"><span class="chip b">${esc(p.label)}</span><h3>${esc(p.title)}</h3><p>${esc(p.objective || '')}</p>
+  ${(p.points || []).length ? `<ul class="small ink2" style="margin:10px 0 0;padding-left:18px">${p.points.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</div>`).join('');
+
+/* 前回からの変化 */
+const chgIds = new Set(CH.items.map(c => c.id));
+if (!CH.from) { $('#cnote').textContent = 'まだ比べる前回の取り込みがありません。'; }
+else {
+  $('#cnote').textContent = `${CH.from} → ${CH.to} の更新で、状態か進み具合が変わった目標が ${CH.items.length} 件あります。`;
+  const order = { '達成': 0, '順調': 1, '注意': 2, '未着手': 3 };
+  const items = [...CH.items].sort((a, b) => (order[a.to_status] ?? 9) - (order[b.to_status] ?? 9));
+  $('#cl').innerHTML = items.map(c => { const k = KR[c.id];
+    const from = c.new ? '<span class="chip">新しく追加</span>' : `${c.from_progress ? esc(c.from_progress) + ' ' : ''}${st(c.from_status)}`;
+    return `<div><span>${esc(k.summary)}<div class="who">${esc(k.owner)}・${esc(k.objective)}</div></span>
+    <span class="mv">${from}<span>→</span>${c.to_progress ? `<b style="color:var(--ink)">${esc(c.to_progress)}</b> ` : ''}${st(c.to_status)}</span></div>`; }).join('');
+}
+$('#cl-src').innerHTML = srcHtml(OKR_SRC) + '。前回の取り込みと比べて、このサイトが出したもの';
+
+/* すべての目標 */
+const f = { type: 'すべて', owner: 'すべて', st: 'すべて', q: '' };
+const TYPES = [['すべて', 'すべて'], ['hq', '本部'], ['office', '議員室']];
+const owners = () => [...new Set(ALL.filter(k => f.type === 'すべて' || k.owner_type === f.type).map(k => k.owner))];
+const srcOf = k => ((k.owner_type === 'hq' ? OKR.hq : OKR.offices).find(o => o.id === k.owner_id) || {}).source;
+function seg(el, key, vals) {
+  el.innerHTML = vals.map(([v, l]) => `<button class="${v === f[key] ? 'on' : ''}" data-v="${esc(v)}">${l}</button>`).join('');
+  el.onclick = e => { const b = e.target.closest('button'); if (!b) return; f[key] = b.dataset.v; $$('button', el).forEach(x => x.classList.toggle('on', x === b));
+    if (key === 'type') { f.owner = 'すべて'; fillOwners(); } draw(); };
+}
+function fillOwners() { $('#f-owner').innerHTML = ['すべて', ...owners()].map(o => `<option ${o === f.owner ? 'selected' : ''}>${esc(o)}</option>`).join(''); }
+seg($('#f-type'), 'type', TYPES);
+seg($('#f-st'), 'st', [['すべて', 'すべて'], ...['達成', '順調', '注意', '未着手'].map(s => [s, st(s)])]);
+fillOwners();
+$('#f-owner').onchange = e => { f.owner = e.target.value; draw(); };
+$('#f-q').oninput = e => { f.q = e.target.value.trim(); draw(); };
+function draw() {
+  const r = ALL.filter(k => (f.type === 'すべて' || k.owner_type === f.type) && (f.owner === 'すべて' || k.owner === f.owner)
+    && (f.st === 'すべて' || k.status === f.st) && (!f.q || (k.summary + k.objective + k.owner).includes(f.q)));
+  $('#kt').innerHTML = `<tr><th>担当</th><th>目指すこと（O）と、測り方（KR）</th><th>進み具合</th><th>状態</th></tr>` + r.map(k => { const s = srcOf(k);
+    return `<tr><td style="white-space:nowrap">${s ? ext(s, k.owner) : esc(k.owner)}<div class="small muted">${k.owner_type === 'hq' ? '本部' : '議員室'}</div></td>
+    <td><div class="small muted">${esc(k.objective)}</div>${esc(k.summary)}${chgIds.has(k.id) ? ' <span class="chip b">前回から変化</span>' : ''}</td>
+    <td class="small ink2" style="white-space:nowrap">${esc(k.progress || '—')}</td><td>${st(k.status)}</td></tr>`; }).join('');
+  $('#kt-src').innerHTML = `${r.length}件／全${ALL.length}件。` + srcHtml(OKR_SRC);
+}
+draw();
+</script>
+</body></html>

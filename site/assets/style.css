@@ -217,3 +217,43 @@ details.job .b{padding:0 0 16px;font-size:13.5px;color:var(--ink-2)}
 footer.ft{border-top:1px solid var(--line);padding:40px 0 60px;font-size:13px;color:var(--ink-3)}
 @media (max-width:980px){.bh{grid-template-columns:1fr;gap:8px}.ringwrap{grid-template-columns:1fr;gap:20px}.pipe{grid-template-columns:1fr 1fr;row-gap:28px}.pnode .arrow{display:none}.side,.next{grid-template-columns:1fr}.stage{grid-template-columns:1fr;gap:14px}.tiles{grid-template-columns:repeat(2,1fr)}.ocols{grid-template-columns:1fr 1fr}.ocols::before,.ocol::before{display:none}.vals{grid-template-columns:1fr 1fr}.jobhero{grid-template-columns:1fr}}
 @media (max-width:560px){.w{padding:0 16px}.ph{padding:48px 0 24px}.stamp{display:none}.pipe{grid-template-columns:1fr}.hbar{grid-template-columns:90px 1fr 30px}.dhero{grid-template-columns:100px 1fr}.dbody{padding:0 18px 48px}.ocols{grid-template-columns:1fr}}
+/* guide（触る・読む） */
+.try{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.try .card{display:flex;flex-direction:column;gap:10px;padding:22px}
+.try .card h3{margin:0;font-size:18px}
+.try .why{font-size:14px;color:var(--ink-2)}
+.try .do{font-size:13.5px;background:var(--soft);border-radius:12px;padding:10px 12px}
+.try .do b,.try .then b{display:block;font-size:11.5px;letter-spacing:.06em;color:var(--ink-3);margin-bottom:4px}
+.try .then ol{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2)}
+.try .then li{margin:2px 0}
+.try .warnnote{font-size:12.5px;color:var(--warn)}
+.try .krs{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.try .krs div{display:flex;justify-content:space-between;gap:10px;font-size:12.5px}
+.try .go{align-self:flex-start;font-size:13px;font-weight:700;color:var(--paper);background:var(--ink);padding:8px 14px;border-radius:999px}
+.try .card .src{margin-top:auto}
+.ex{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.ex .card .flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+.ex .card .flow span{font-size:13px;font-weight:700;background:var(--brand-soft);color:var(--brand-ink);padding:4px 10px;border-radius:999px}
+.ex .card .flow i{font-style:normal;color:var(--ink-3)}
+.rl{display:grid;gap:28px}
+.rl ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rl li{display:grid;grid-template-columns:28px 1fr auto;gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}
+.rl li input{width:18px;height:18px;margin-top:3px;accent-color:var(--brand)}
+.rl li.done .tt{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--line-2)}
+.rl .tt{font-weight:600}
+.rl .why{font-size:13px;color:var(--ink-3)}
+.rl .k{font-size:11.5px;font-weight:700;color:var(--ink-3);white-space:nowrap}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:13px;color:var(--ink-3)}
+.prog .bar{flex:1;max-width:320px;height:8px;border-radius:99px;background:var(--mute);overflow:hidden}
+.prog .bar i{display:block;height:100%;background:var(--brand)}
+/* okr（目標の一覧） */
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kpis div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.kpis b{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em}
+.kpis span{font-size:12.5px;color:var(--ink-3)}
+.chg{display:grid;gap:0;border-top:1px solid var(--line)}
+.chg>div{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.chg .who{font-size:12px;color:var(--ink-3)}
+.chg .mv{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:12px;color:var(--ink-3)}
+select.sel{height:42px;border-radius:12px;border:1px solid var(--line);background:var(--paper);padding:0 12px;font:inherit;color:var(--ink)}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,1fr)}.try{grid-template-columns:1fr}.rl li{grid-template-columns:28px 1fr}.rl .k{grid-column:2}}

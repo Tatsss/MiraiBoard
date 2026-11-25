@@ -23,7 +23,7 @@ const ratio = p => { const m = /^([\d.]+)\/([\d.]+)/.exec(p || ''); if (!m) retu
 const legend = () => `<div class="legend">状態: ${['達成', '順調', '注意', '未着手'].map(st).join('')}</div>`;
 
 /* ヘッダーとフッター */
-const PAGES = [['index.html', '概要'], ['flow.html', '政策づくりの現場'], ['people.html', '議員12人'], ['org.html', '体制と目標'], ['timeline.html', '年表'], ['more.html', '理念・求人・出典']];
+const PAGES = [['index.html', '概要'], ['start.html', '触る・読む'], ['flow.html', '政策づくりの現場'], ['okr.html', '目標の一覧'], ['people.html', '議員12人'], ['org.html', '体制と目標'], ['timeline.html', '年表'], ['more.html', '理念・求人・出典']];
 function chrome(active) {
   const logo = '<svg width="28" height="28" viewBox="0 0 28 28"><defs><linearGradient id="mbLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b8a66"/><stop offset="1" stop-color="#6fe4c2"/></linearGradient></defs><rect width="28" height="28" rx="8" fill="url(#mbLogo)"/><path d="M7 19V9l7 6 7-6v10" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   document.body.insertAdjacentHTML('afterbegin', `<header class="bar"><div class="w"><a class="brand" href="index.html">${logo}MiraiBoard</a><nav class="tabsnav">${PAGES.map(([h, t]) => `<a href="${h}" class="${h === active ? 'on' : ''}">${t}</a>`).join('')}</nav><span class="stamp">更新 ${esc(MB.updated)}</span></div></header>`);

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>触る・読む — MiraiBoard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<main>
+<section class="ph"><div class="w">
+  <div class="kick">Try &amp; read</div>
+  <h1>まず<span class="g">触って</span>、それから読む。</h1>
+  <p class="lead" id="intro"></p>
+</div></section>
+
+<section class="blk" style="border-top:0;padding-top:0" id="try"><div class="w">
+  <div class="bh"><div class="k">Try</div><div><h2>触ってみるもの</h2><p>何のためにあるか、やってみること、入れた声やデータがその後どうなるか。下の印は、関係する公開OKRの目標のいまの状態です。</p></div></div>
+  <div id="lg" style="margin-bottom:14px"></div>
+  <div class="try" id="tg"></div>
+</div></section>
+
+<section class="blk alt" id="voice"><div class="w">
+  <div class="bh"><div class="k">After the interview</div><div><h2>AIインタビューの声は、どう形になったか</h2><p>党が公開している例です。数字は党の発表のとおりです。</p></div></div>
+  <div class="ex" id="ex"></div>
+  <div class="lbl" style="margin-top:36px">党自身が挙げている課題</div>
+  <div class="chg" id="oq"></div>
+  <p class="small muted" style="margin-top:14px">声が政策になるまでの段階ごとの担当や道具は、<a class="u" href="flow.html">政策づくりの現場</a>にあります。</p>
+</div></section>
+
+<section class="blk" id="read"><div class="w">
+  <div class="bh"><div class="k">Read &amp; watch</div><div><h2>読む・見る（上から順に）</h2><p>チェックは、この端末のブラウザにだけ残ります。要点をまとめてあるものは「要点」から見られます。</p></div></div>
+  <div class="prog"><div class="bar"><i id="pbar"></i></div><span id="ptext"></span></div>
+  <div class="rl" id="rl"></div>
+</div></section>
+</main>
+
+<script src="assets/data.js"></script><script src="assets/common.js"></script>
+<script>
+chrome('start.html');
+const G = MB.guide;
+$('#intro').textContent = G.intro;
+$('#lg').innerHTML = legend();
+const srcs = a => (a || []).map(srcHtml).join('<br>');
+
+/* 触ってみる */
+$('#tg').innerHTML = G.try.map(t => `<div class="card">
+  <h3>${esc(t.name)}</h3>
+  <div class="why">${esc(t.why)}</div>
+  <div class="do"><b>やってみること</b>${esc(t.do)}</div>
+  ${t.note ? `<div class="warnnote">※ ${esc(t.note)}</div>` : ''}
+  ${t.then && t.then.length ? `<div class="then"><b>その後どうなるか</b><ol>${t.then.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>` : ''}
+  ${t.krs && t.krs.length ? `<div class="krs">${t.krs.filter(id => KR[id]).map(id => { const k = KR[id];
+      return `<div><span>${esc(k.summary)}<span class="muted">（${esc(k.owner)}）</span></span><span style="white-space:nowrap">${k.progress ? `<span class="muted">${esc(k.progress)}</span> ` : ''}${st(k.status)}</span></div>`; }).join('')}</div>` : ''}
+  <a class="go" href="${esc(t.url)}" target="_blank" rel="noopener">開く ↗</a>
+  <div class="src">${srcs(t.sources)}${t.krs && t.krs.length ? '<br>' + srcHtml(OKR_SRC) : ''}</div>
+</div>`).join('');
+
+/* 声が形になった例・課題 */
+$('#ex').innerHTML = G.examples.map(e => `<div class="card"><h3>${esc(e.title)}</h3>
+  <div class="flow">${e.steps.map(s => `<span>${esc(s)}</span>`).join('<i>→</i>')}</div>
+  <p>${esc(e.note)}</p><div class="src">${srcHtml(e.source)}</div></div>`).join('');
+$('#oq').innerHTML = G.open_questions.map(q => `<div><span>${esc(q.text)}<div class="src" style="margin-top:4px">${srcHtml(q.source)}</div></span></div>`).join('');
+
+/* 読む・見る（チェックはこの端末のブラウザだけに残す） */
+const KEY = 'mb-read-v1';
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { done = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const all = G.reading.flatMap(g => g.items);
+const idOf = it => it.url || it.title;
+function prog() {
+  const n = all.filter(it => done[idOf(it)]).length;
+  $('#pbar').style.width = `${Math.round(n / all.length * 100)}%`;
+  $('#ptext').textContent = `${n} / ${all.length} 件`;
+}
+const meetingDates = new Set(MB.meetings.meetings.map(m => String(m.date)));
+$('#rl').innerHTML = G.reading.map(g => `<div><div class="lbl">${esc(g.group)}</div><ul>${g.items.map(it => { const id = idOf(it);
+  const summary = it.meeting && meetingDates.has(String(it.meeting)) ? ` ・ <a class="u" href="more.html#meetings">要点</a>` : '';
+  return `<li class="${done[id] ? 'done' : ''}"><input type="checkbox" data-id="${esc(id)}" ${done[id] ? 'checked' : ''} aria-label="${esc(it.title)} を読んだ">
+  <div><div class="tt">${it.url ? ext(it.url, it.title) : esc(it.title) + ' <span class="small muted">（URL未確認。チャンネル内で検索）</span>'}</div><div class="why">${esc(it.why)}${summary}</div></div>
+  <span class="k">${esc(it.kind)}</span></li>`; }).join('')}</ul></div>`).join('');
+$('#rl').addEventListener('change', e => { const c = e.target.closest('input[data-id]'); if (!c) return;
+  done[c.dataset.id] = c.checked; if (!c.checked) delete done[c.dataset.id];
+  c.closest('li').classList.toggle('done', c.checked); save(); prog(); });
+prog();
+</script>
+</body></html>
