@@ -1,4 +1,4 @@
-updated: '2026-11-24'
+updated: '2026-11-25'
 channels:
 - kind: YouTube
   name: チームみらい 公式チャンネル
@@ -73,3 +73,19 @@ channels:
   url: https://github.com/team-mirai-volunteer
   what: ボランティアのエンジニアのリポジトリ
   source: null
+- kind: Podcast
+  name: チみラジ（ポッドキャスト。配信先の一覧）
+  url: https://linktr.ee/teammirai_radio
+  what: 2026-10-20 開始
+  source:
+    name: チームみらい お知らせ「ポッドキャスト『チみラジ』開始」
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-25'
+- kind: YouTube
+  name: 1億人の事情（新チャンネル。紹介動画）
+  url: https://www.youtube.com/watch?v=JBAauWyitB0
+  what: 2026-11-01 公開
+  source:
+    name: チームみらい お知らせ「新YouTubeチャンネル『1億人の事情』を公開」
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-25'

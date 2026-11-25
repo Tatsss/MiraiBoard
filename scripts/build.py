@@ -33,6 +33,7 @@ def main() -> None:
         "timeline": y("timeline.yaml"),
         "products": y("products.yaml"),
         "channels": y("channels.yaml"),
+        "repos": y("repos.yaml"),
         "jobs": y("jobs.yaml"),
         "meetings": y("meetings.yaml"),
         "okr": json.loads(okr_file.read_text(encoding="utf-8")),

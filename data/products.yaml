@@ -1,5 +1,5 @@
-updated: '2026-11-24'
-note: GitHubの数字は 2026-11-21 時点。状態は公開情報から読めることだけ
+updated: '2026-11-25'
+note: 使えるサービスと公開している資料。GitHubで公開しているソースコードは、下の「GitHubで公開しているもの」に全件。状態は公開情報から読めることだけ
 products:
 - name: みらい議会
   url: https://gikai.team-mir.ai
@@ -91,3 +91,30 @@ products:
     name: GitHub digitaldemocracy2030/idobata
     url: https://github.com/digitaldemocracy2030/idobata
     checked: '2026-11-21'
+- name: AI勉強会の資料（議員・議員事務所向け）
+  url: https://github.com/team-mirai/vibe-coding-workshop
+  what: 国会議員・議員事務所向けの「AIの使い方（バイブコーディング）勉強会」の資料。CC BY 4.0 で公開
+  repo: team-mirai/vibe-coding-workshop
+  status: 公開（2026-07-02 更新）
+  source:
+    name: GitHub team-mirai/vibe-coding-workshop
+    url: https://github.com/team-mirai/vibe-coding-workshop
+    checked: '2026-11-25'
+- name: 死活監視（upptime）
+  url: https://github.com/team-mirai-volunteer/upptime
+  what: サービスの死活監視（リポジトリの説明より）
+  repo: team-mirai-volunteer/upptime
+  status: 更新が続いている
+  source:
+    name: GitHub team-mirai-volunteer/upptime
+    url: https://github.com/team-mirai-volunteer/upptime
+    checked: '2026-11-25'
+- name: オンライングッズストア
+  url: https://team-mir.stores.jp/
+  what: 党の公式グッズの販売
+  repo: null
+  status: 稼働中（2026-07-28 公開）
+  source:
+    name: チームみらい お知らせ「オンライングッズストアを公開」（2026-07-28）
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-25'

@@ -21,6 +21,13 @@
   <div class="lbl" style="margin-top:36px">発信チャンネル</div><div class="links" id="ch"></div>
 </div></section>
 
+<section class="blk" id="repos"><div class="w">
+  <div class="bh"><div class="k">Open source</div><div><h2>GitHubで公開しているもの</h2><p id="rnote"></p></div></div>
+  <div class="toolbar"><div class="seg" id="r-org"></div><div class="seg" id="r-st"></div></div>
+  <div class="scroll"><table class="tbl" id="rt"></table></div>
+  <div class="src" id="r-src"></div>
+</div></section>
+
 <section class="blk" id="meetings"><div class="w">
   <div class="bh"><div class="k">Watch &amp; read</div><div><h2>動画・記事の要点</h2><p id="mhow"></p></div></div>
   <div id="mt"></div>
@@ -51,6 +58,20 @@ $('#ch').innerHTML = MB.channels.channels.map(c => `<a href="${esc(c.url)}" targ
 $('#mhow').textContent = MB.meetings.how_to;
 const mt = MB.meetings.meetings || [];
 $('#mt').innerHTML = mt.map(x => `<article class="stage" style="grid-template-columns:150px 1fr"><div><div class="chip">${esc(x.kind)}</div><div class="small muted" style="margin-top:8px">${esc(x.date)}</div></div><div><h3 style="font-size:20px">${x.url ? ext(x.url, x.title) : esc(x.title)}</h3><div class="kv">${(x.people || []).map(p => `<span class="chip b">${esc(p)}</span>`).join('')}</div><ul class="facts">${(x.points || []).map(t => `<li>${esc(t)}</li>`).join('')}</ul><div class="src">${srcHtml(x.source)}</div></div></article>`).join('') || '<p class="muted">まだありません。</p>';
+/* GitHub のリポジトリ（全件） */
+const R = MB.repos, RA = R.orgs.flatMap(o => o.repos.map(r => ({ ...r, org: o.org })));
+const rf = { org: 'すべて', st: 'すべて' };
+$('#rnote').textContent = `党（team-mirai）${R.orgs[0].repos.length}件と、ボランティアのエンジニアの組織（team-mirai-volunteer）${R.orgs[1].repos.length}件。` + R.note + '。';
+const rseg = (el, key, vals) => { el.innerHTML = vals.map(([v, l]) => `<button class="${v === rf[key] ? 'on' : ''}" data-v="${esc(v)}">${esc(l)}</button>`).join('');
+  el.onclick = e => { const b = e.target.closest('button'); if (!b) return; rf[key] = b.dataset.v; $$('button', el).forEach(x => x.classList.toggle('on', x === b)); rdraw(); }; };
+rseg($('#r-org'), 'org', [['すべて', 'すべて'], ...R.orgs.map(o => [o.org, o.org])]);
+rseg($('#r-st'), 'st', [['すべて', 'すべて'], ['active', 'アーカイブなし'], ['archived', 'アーカイブ']]);
+function rdraw() {
+  const r = RA.filter(x => (rf.org === 'すべて' || x.org === rf.org) && (rf.st === 'すべて' || (rf.st === 'archived') === x.archived));
+  $('#rt').innerHTML = `<tr><th>リポジトリ</th><th>説明</th><th>状態</th><th>更新</th></tr>` + r.map(x => `<tr><td style="white-space:nowrap">${ext(x.url, x.name)}<div class="small muted">${esc(x.org)}</div></td><td class="small ink2">${x.description ? esc(x.description) : '<span class="muted">説明なし</span>'}</td><td style="white-space:nowrap">${x.archived ? '<span class="small muted">▢ アーカイブ</span>' : '<span class="small">● アーカイブなし</span>'}</td><td class="small muted" style="white-space:nowrap">${esc(x.updated)}</td></tr>`).join('');
+  $('#r-src').innerHTML = `${r.length}件／全${RA.length}件。` + R.orgs.map(o => srcHtml(o.source)).join(' ');
+}
+rdraw();
 /* 求人 */
 const J = MB.jobs, f = J.jobs[0];
 $('#jnote').textContent = J.note;
@@ -62,7 +83,7 @@ $('#jl').innerHTML = J.jobs.slice(1).map(j => `<details class="job"><summary><sp
 const S = new Map(); const add = s => { if (s && s.url && !S.has(s.url)) S.set(s.url, s); };
 add(party.summary_source); add(party.numbers.source); add(party.mvv_source); add(party.cycle.source); add(party.member_role_policy.source); add(OKR_SRC); add(MB.news.source); add(MB.process.intro_source);
 MB.process.stages.forEach(s => (s.facts || []).forEach(f => add(f.source)));
-MB.timeline.events.forEach(e => add(e.source)); (MB.meetings.meetings || []).forEach(x => add(x.source)); (MB.party.leaders?.items || []).forEach(l => add(l.source)); MB.products.products.forEach(p => add(p.source)); MB.channels.channels.forEach(c => add(c.source));
+MB.timeline.events.forEach(e => add(e.source)); (MB.meetings.meetings || []).forEach(x => add(x.source)); (MB.party.leaders?.items || []).forEach(l => add(l.source)); MB.products.products.forEach(p => add(p.source)); MB.channels.channels.forEach(c => add(c.source)); MB.repos.orgs.forEach(o => add(o.source));
 MB.members.members.forEach(m => m.sources.forEach(add)); add({ name: 'チームみらい 求人ページ（HERP）', url: 'https://herp.careers/v1/teammirai', checked: '2026-11-21' });
 $('#srcs').innerHTML = [...S.values()].map(s => `<li style="margin-bottom:6px">${ext(s.url, s.name)}${s.checked ? ` <span class="muted">（${esc(s.checked)} 確認）</span>` : ''}</li>`).join('');
 </script>

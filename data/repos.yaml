@@ -1,0 +1,229 @@
+updated: '2026-11-25'
+note: GitHub で公開されているリポジトリの全件（ログインしていない状態で見えるもの）。説明は各リポジトリの説明文をそのまま。説明が書かれていないものは「説明なし」。更新日は一覧に出ている日付
+orgs:
+- org: team-mirai
+  label: 党（チームみらい）
+  url: https://github.com/team-mirai
+  repos:
+  - name: mirai-gikai
+    description: null
+    archived: false
+    updated: '2026-11-25'
+    url: https://github.com/team-mirai/mirai-gikai
+  - name: marumie
+    description: 政治資金の流れを透明性を持って公開するプラットフォームです
+    archived: false
+    updated: '2026-11-22'
+    url: https://github.com/team-mirai/marumie
+  - name: minna-no-rcv-oss
+    description: みんなのRCV — 誰でも優先順位付投票（Ranked Choice Voting）を無料で開催できるツール
+    archived: false
+    updated: '2026-11-21'
+    url: https://github.com/team-mirai/minna-no-rcv-oss
+  - name: okr-content
+    description: null
+    archived: false
+    updated: '2026-11-20'
+    url: https://github.com/team-mirai/okr-content
+  - name: manifesto-body
+    description: null
+    archived: false
+    updated: '2026-10-14'
+    url: https://github.com/team-mirai/manifesto-body
+  - name: vibe-coding-workshop
+    description: 国会議員・議員事務所向け「AIの使い方（バイブコーディング）勉強会」の資料（CC BY 4.0）
+    archived: false
+    updated: '2026-07-02'
+    url: https://github.com/team-mirai/vibe-coding-workshop
+  - name: ai-study-materials
+    description: チームみらいのAI勉強会で使った資料を CC BY 4.0 でオープン公開するリポジトリ
+    archived: true
+    updated: '2026-06-30'
+    url: https://github.com/team-mirai/ai-study-materials
+  - name: get_events_from_notion_db
+    description: ウェブサイト掲載のため、衆院選2026安野さんの予定イベント取得の定期バッチ
+    archived: true
+    updated: '2026-04-21'
+    url: https://github.com/team-mirai/get_events_from_notion_db
+  - name: policy
+    description: null
+    archived: true
+    updated: '2025-07-26'
+    url: https://github.com/team-mirai/policy
+  - name: kouchou-ai
+    description: 広聴AI (デジタル民主主義2030ブロードリスニング)
+    archived: false
+    updated: '2025-07-08'
+    url: https://github.com/team-mirai/kouchou-ai
+  - name: policy-pr-data
+    description: null
+    archived: true
+    updated: '2025-07-01'
+    url: https://github.com/team-mirai/policy-pr-data
+  - name: random
+    description: 独立したリポジトリにするほどでもないものを気軽にシェアするためのリポジトリです
+    archived: true
+    updated: '2025-07-01'
+    url: https://github.com/team-mirai/random
+  source:
+    name: GitHub team-mirai のリポジトリ一覧
+    url: https://github.com/orgs/team-mirai/repositories
+    checked: '2026-11-25'
+- org: team-mirai-volunteer
+  label: ボランティアのエンジニア（team-mirai-volunteer）
+  url: https://github.com/team-mirai-volunteer
+  repos:
+  - name: upptime
+    description: 死活監視
+    archived: false
+    updated: '2026-11-25'
+    url: https://github.com/team-mirai-volunteer/upptime
+  - name: action-board
+    description: 政治活動をもっと身近に。楽しく政治参加に取り組める、チームみらいのアクションボード。
+    archived: false
+    updated: '2026-11-24'
+    url: https://github.com/team-mirai-volunteer/action-board
+  - name: rs-vis
+    description: 政府可視化プロジェクトメインレポ
+    archived: false
+    updated: '2026-11-13'
+    url: https://github.com/team-mirai-volunteer/rs-vis
+  - name: polister
+    description: null
+    archived: false
+    updated: '2026-11-04'
+    url: https://github.com/team-mirai-volunteer/polister
+  - name: video-processor
+    description: 動画のプロセッシングを行うツール
+    archived: false
+    updated: '2026-11-03'
+    url: https://github.com/team-mirai-volunteer/video-processor
+  - name: fact-checker
+    description: Twitter/X投稿をリアルタイム監視し、AI powered ファクトチェックで政党関連の誤情報を自動検出‧ Slack通知するシステム
+    archived: true
+    updated: '2026-10-09'
+    url: https://github.com/team-mirai-volunteer/fact-checker
+  - name: policy-pr-hub
+    description: '政策プルリク活用ハブ: いどばた政策システムで集まった政策改善提案PRを分析‧活用するシステム。'
+    archived: true
+    updated: '2026-10-09'
+    url: https://github.com/team-mirai-volunteer/policy-pr-hub
+  - name: poster-map
+    description: ポスターやポスティング周り！
+    archived: true
+    updated: '2026-10-09'
+    url: https://github.com/team-mirai-volunteer/poster-map
+  - name: manifesto-notify-bot
+    description: チームみらいのマニフェスト進化のお知らせbot
+    archived: false
+    updated: '2026-01-29'
+    url: https://github.com/team-mirai-volunteer/manifesto-notify-bot
+  - name: post-checker
+    description: SNS投稿や動画台本などをチェックできるリポジトリ
+    archived: false
+    updated: '2026-01-29'
+    url: https://github.com/team-mirai-volunteer/post-checker
+  - name: kokkai-join
+    description: null
+    archived: false
+    updated: '2025-11-25'
+    url: https://github.com/team-mirai-volunteer/kokkai-join
+  - name: kouchou-ai
+    description: 広聴AI (デジタル民主主義2030ブロードリスニング)
+    archived: false
+    updated: '2025-09-22'
+    url: https://github.com/team-mirai-volunteer/kouchou-ai
+  - name: gov-vis
+    description: チームみらいによる政府の歳入や歳出を可視化するプロジェクト
+    archived: true
+    updated: '2025-08-24'
+    url: https://github.com/team-mirai-volunteer/gov-vis
+  - name: community-manager-bot
+    description: コミュマネのタスクを補助するSlack bot
+    archived: true
+    updated: '2025-08-14'
+    url: https://github.com/team-mirai-volunteer/community-manager-bot
+  - name: pr-data
+    description: policy-pr-hubシステムのデータ保存用リポジトリ。team-mirai/policyリポジトリのPRデータを個別ファイル形式で保存する
+    archived: true
+    updated: '2025-07-27'
+    url: https://github.com/team-mirai-volunteer/pr-data
+  - name: github-activity-reporter
+    description: null
+    archived: true
+    updated: '2025-07-22'
+    url: https://github.com/team-mirai-volunteer/github-activity-reporter
+  - name: automated-short-generator
+    description: null
+    archived: false
+    updated: '2025-07-16'
+    url: https://github.com/team-mirai-volunteer/automated-short-generator
+  - name: ai-search
+    description: null
+    archived: false
+    updated: '2025-07-12'
+    url: https://github.com/team-mirai-volunteer/ai-search
+  - name: shortmovie-draft-generator2
+    description: null
+    archived: false
+    updated: '2025-07-12'
+    url: https://github.com/team-mirai-volunteer/shortmovie-draft-generator2
+  - name: shortmovie-draft-generator
+    description: null
+    archived: false
+    updated: '2025-07-11'
+    url: https://github.com/team-mirai-volunteer/shortmovie-draft-generator
+  - name: kouichou-ai-release
+    description: null
+    archived: true
+    updated: '2025-07-08'
+    url: https://github.com/team-mirai-volunteer/kouichou-ai-release
+  - name: devin-stat
+    description: null
+    archived: true
+    updated: '2025-06-24'
+    url: https://github.com/team-mirai-volunteer/devin-stat
+  - name: tiktok-data-tracker
+    description: TikTok動画データ収集ツール - チームみらい関連コンテンツのメトリクス追跡
+    archived: true
+    updated: '2025-06-18'
+    url: https://github.com/team-mirai-volunteer/tiktok-data-tracker
+  - name: knowledge
+    description: 知識のストックです
+    archived: true
+    updated: '2025-06-17'
+    url: https://github.com/team-mirai-volunteer/knowledge
+  - name: oss-statistics
+    description: null
+    archived: true
+    updated: '2025-06-12'
+    url: https://github.com/team-mirai-volunteer/oss-statistics
+  - name: pr_analysis
+    description: null
+    archived: true
+    updated: '2025-06-12'
+    url: https://github.com/team-mirai-volunteer/pr_analysis
+  - name: engineering-hub
+    description: 開発横串イシュー管理用
+    archived: false
+    updated: '2025-06-10'
+    url: https://github.com/team-mirai-volunteer/engineering-hub
+  - name: action-board-mobile
+    description: null
+    archived: false
+    updated: '2025-06-05'
+    url: https://github.com/team-mirai-volunteer/action-board-mobile
+  - name: youtube
+    description: null
+    archived: true
+    updated: '2025-05-28'
+    url: https://github.com/team-mirai-volunteer/youtube
+  - name: project_template
+    description: 新規プロジェクトを作る際の参考用です
+    archived: false
+    updated: '2025-05-27'
+    url: https://github.com/team-mirai-volunteer/project_template
+  source:
+    name: GitHub team-mirai-volunteer のリポジトリ一覧
+    url: https://github.com/orgs/team-mirai-volunteer/repositories
+    checked: '2026-11-25'
