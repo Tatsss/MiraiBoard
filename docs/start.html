@@ -17,6 +17,8 @@
   <div class="bh"><div class="k">Try</div><div><h2>触ってみるもの</h2><p>何のためにあるか、やってみること、入れた声やデータがその後どうなるか。下の印は、関係する公開OKRの目標のいまの状態です。</p></div></div>
   <div id="lg" style="margin-bottom:14px"></div>
   <div class="try" id="tg"></div>
+  <div class="lbl" style="margin-top:44px">ほかに党が作っている・作ろうとしているもの（すぐには触れないものを含む）</div>
+  <div class="scroll"><table class="tbl" id="ot"></table></div>
 </div></section>
 
 <section class="blk alt" id="voice"><div class="w">
@@ -54,6 +56,13 @@ $('#tg').innerHTML = G.try.map(t => `<div class="card">
   <a class="go" href="${esc(t.url)}" target="_blank" rel="noopener">開く ↗</a>
   <div class="src">${srcs(t.sources)}${t.krs && t.krs.length ? '<br>' + srcHtml(OKR_SRC) : ''}</div>
 </div>`).join('');
+
+/* ほかに作っている・作ろうとしているもの */
+$('#ot').innerHTML = `<tr><th>名前</th><th>中身</th><th>関係する目標</th></tr>` + G.others.map(o => `<tr>
+  <td style="min-width:180px"><b>${esc(o.name)}</b><div class="small muted">${esc(o.kind)}</div></td>
+  <td class="small ink2">${esc(o.what)}<div class="src" style="margin-top:6px">${srcHtml(o.source)}</div></td>
+  <td class="small" style="min-width:220px">${(o.krs || []).filter(id => KR[id]).map(id => { const k = KR[id];
+    return `<div style="margin-bottom:6px">${esc(k.summary)} ${k.progress ? `<span class="muted">${esc(k.progress)}</span> ` : ''}${st(k.status)}</div>`; }).join('') || '<span class="muted">—</span>'}</td></tr>`).join('');
 
 /* 声が形になった例・課題 */
 $('#ex').innerHTML = G.examples.map(e => `<div class="card"><h3>${esc(e.title)}</h3>

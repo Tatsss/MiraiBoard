@@ -102,6 +102,81 @@ try:
     url: https://team-mir.ai/
     checked: '2026-11-25'
 
+# 上の7つのほかに、党が作っている・作ろうとしているもの（すぐには触れないものを含む）
+others:
+- name: みらいいぬ（党内のAIエージェント）
+  kind: 党内向け
+  what: 党の仕事をする人のほぼ全員が毎日使っている。費用が大きく、安く使えるようにすることが課題
+  krs: [kaihatsu-o3-kr1]
+  source:
+    name: YouTube「永田町エンジニアチーム密着」（2026-09-12。文字起こしで確認）
+    url: https://youtu.be/0wXNPd3e3fE
+    checked: '2026-11-25'
+- name: 政党トラッカー
+  kind: 試作（公開OKRのサイト）
+  what: 党の約束がどこまで進んだかを見える化する。プロトタイプとして公開OKRのサイトを公開し、進捗を毎週更新する運用が始まったことで、目標を達成とした
+  krs: [kaihatsu-o1-kr3]
+  source:
+    name: チームみらい OKR 開発本部 O1
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kaihatsu/o1.yml
+    checked: '2026-11-26'
+- name: 声に党が回答する場
+  kind: テスト公開が目標
+  what: 賛同が集まった声に、党が回答する
+  krs: [kaihatsu-o2-kr1]
+  source:
+    name: チームみらい OKR 開発本部 O2
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kaihatsu/o2.yml
+    checked: '2026-11-26'
+- name: AIインタビュー以外の新しい広聴ツール
+  kind: クローズドで公開予定
+  what: 名前と中身は公開されていない
+  krs: [kocho-o3-kr2]
+  source:
+    name: チームみらい OKR 広聴本部 O3
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kocho/o3.yml
+    checked: '2026-11-26'
+- name: みらいSNS（熟議の仕組み）
+  kind: これから作る
+  what: 2027年1〜3月期に設計と実装を始める予定。広聴の学びをα版につなげることを目標にしている。開発本部の求人でも担当プロダクトに挙がっている
+  krs: [kocho-o3-kr4]
+  source:
+    name: チームみらい OKR 広聴本部 O3
+    url: https://github.com/team-mirai/okr-content/blob/main/2026/q4/hq/kocho/o3.yml
+    checked: '2026-11-26'
+- name: 消費税減税法案の意見募集サイト
+  kind: 公開（2026-10-28）
+  what: 法案に対する意見を募るページ
+  krs: []
+  source:
+    name: チームみらい公式サイト お知らせ一覧
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-21'
+- name: みんなのRCV
+  kind: オープンソース
+  what: 順位を付けて投票する方式（RCV）を実施するツール
+  krs: []
+  source:
+    name: GitHub team-mirai/minna-no-rcv-oss
+    url: https://github.com/team-mirai/minna-no-rcv-oss
+    checked: '2026-11-21'
+- name: 広聴AI・いどばたシステム
+  kind: 関連プロジェクト（デジタル民主主義2030）
+  what: 大量の意見をまとめて要約する道具と、熟議を支える道具。党ではなく、デジタル民主主義2030のプロジェクト
+  krs: []
+  source:
+    name: GitHub digitaldemocracy2030/kouchou-ai
+    url: https://github.com/digitaldemocracy2030/kouchou-ai
+    checked: '2026-11-21'
+- name: まる見えチャンネル・1億人の事情
+  kind: 発信（YouTube）
+  what: 法案の賛否を決める党内会議の公開と、新しいメディアの取り組み。一覧は「理念・求人・出典」の発信チャンネル
+  krs: []
+  source:
+    name: チームみらい公式サイト お知らせ一覧
+    url: https://team-mir.ai/news/all
+    checked: '2026-11-21'
+
 # AIインタビューの声が形になった例
 examples:
 - title: 選挙中のSNSデマ対策
